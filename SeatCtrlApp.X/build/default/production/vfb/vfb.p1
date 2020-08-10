@@ -1,0 +1,112 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"35 vfb/vfb.h
+[; ;vfb/vfb.h: 35: VFB_MultiStateBtnEnum VFB_HeightBtnState;
+[c E52 0 1 2 .. ]
+[n E52 . VFB_BTN_STATE_INIT VFB_BTN_STATE_MINUS VFB_BTN_STATE_PLUS  ]
+"40
+[; ;vfb/vfb.h: 40: VFB_AutoStateBtnEnum VFB_AutoBtnState;
+[c E57 0 1 .. ]
+[n E57 . VFB_BTN_STATE_MANUAL VFB_BTN_STATE_AUTO  ]
+"43
+[; ;vfb/vfb.h: 43: VFB_MotorStateEnum VFB_HeightMotorState;
+[c E61 0 1 .. ]
+[n E61 . VFB_MOTOR_REVERSE VFB_MOTOR_FORWARD  ]
+"35 vfb/vfb.h
+[; ;vfb/vfb.h: 35: VFB_MultiStateBtnEnum VFB_HeightBtnState;
+[v _VFB_HeightBtnState `E52 ~T0 @X0 1 e ]
+"36
+[; ;vfb/vfb.h: 36: VFB_MultiStateBtnEnum VFB_InclineBtnState;
+[v _VFB_InclineBtnState `E52 ~T0 @X0 1 e ]
+"37
+[; ;vfb/vfb.h: 37: VFB_MultiStateBtnEnum VFB_SlideBtnState;
+[v _VFB_SlideBtnState `E52 ~T0 @X0 1 e ]
+"40
+[; ;vfb/vfb.h: 40: VFB_AutoStateBtnEnum VFB_AutoBtnState;
+[v _VFB_AutoBtnState `E57 ~T0 @X0 1 e ]
+"43
+[; ;vfb/vfb.h: 43: VFB_MotorStateEnum VFB_HeightMotorState;
+[v _VFB_HeightMotorState `E61 ~T0 @X0 1 e ]
+"44
+[; ;vfb/vfb.h: 44: VFB_MotorStateEnum VFB_InclineMotorState;
+[v _VFB_InclineMotorState `E61 ~T0 @X0 1 e ]
+"45
+[; ;vfb/vfb.h: 45: VFB_MotorStateEnum VFB_SlideMotorState;
+[v _VFB_SlideMotorState `E61 ~T0 @X0 1 e ]
+"48
+[; ;vfb/vfb.h: 48: uint8 VFB_HeightPosition;
+[v _VFB_HeightPosition `uc ~T0 @X0 1 e ]
+"49
+[; ;vfb/vfb.h: 49: uint8 VFB_InclinePosition;
+[v _VFB_InclinePosition `uc ~T0 @X0 1 e ]
+"50
+[; ;vfb/vfb.h: 50: uint8 VFB_SlidePosition;
+[v _VFB_SlidePosition `uc ~T0 @X0 1 e ]
+"53
+[; ;vfb/vfb.h: 53: uint16 VFB_DriverWeight;
+[v _VFB_DriverWeight `us ~T0 @X0 1 e ]
+"13 vfb/vfb.c
+[; ;vfb/vfb.c: 13: VFB_MultiStateBtnEnum VFB_HeightBtnState = VFB_BTN_STATE_INIT;
+[v _VFB_HeightBtnState `E52 ~T0 @X0 1 e ]
+[i _VFB_HeightBtnState
+. `E52 0
+]
+"14
+[; ;vfb/vfb.c: 14: VFB_MultiStateBtnEnum VFB_InclineBtnState = VFB_BTN_STATE_INIT;
+[v _VFB_InclineBtnState `E52 ~T0 @X0 1 e ]
+[i _VFB_InclineBtnState
+. `E52 0
+]
+"15
+[; ;vfb/vfb.c: 15: VFB_MultiStateBtnEnum VFB_SlideBtnState = VFB_BTN_STATE_INIT;
+[v _VFB_SlideBtnState `E52 ~T0 @X0 1 e ]
+[i _VFB_SlideBtnState
+. `E52 0
+]
+"18
+[; ;vfb/vfb.c: 18: VFB_AutoStateBtnEnum VFB_AutoBtnState = VFB_BTN_STATE_MANUAL;
+[v _VFB_AutoBtnState `E57 ~T0 @X0 1 e ]
+[i _VFB_AutoBtnState
+. `E57 0
+]
+"21
+[; ;vfb/vfb.c: 21: VFB_MotorStateEnum VFB_HeightMotorState = VFB_MOTOR_FORWARD;
+[v _VFB_HeightMotorState `E61 ~T0 @X0 1 e ]
+[i _VFB_HeightMotorState
+. `E61 1
+]
+"22
+[; ;vfb/vfb.c: 22: VFB_MotorStateEnum VFB_InclineMotorState = VFB_MOTOR_FORWARD;
+[v _VFB_InclineMotorState `E61 ~T0 @X0 1 e ]
+[i _VFB_InclineMotorState
+. `E61 1
+]
+"23
+[; ;vfb/vfb.c: 23: VFB_MotorStateEnum VFB_SlideMotorState = VFB_MOTOR_FORWARD;
+[v _VFB_SlideMotorState `E61 ~T0 @X0 1 e ]
+[i _VFB_SlideMotorState
+. `E61 1
+]
+"26
+[; ;vfb/vfb.c: 26: uint8 VFB_HeightPosition = 0;
+[v _VFB_HeightPosition `uc ~T0 @X0 1 e ]
+[i _VFB_HeightPosition
+-> -> 0 `i `uc
+]
+"27
+[; ;vfb/vfb.c: 27: uint8 VFB_InclinePosition = 0;
+[v _VFB_InclinePosition `uc ~T0 @X0 1 e ]
+[i _VFB_InclinePosition
+-> -> 0 `i `uc
+]
+"28
+[; ;vfb/vfb.c: 28: uint8 VFB_SlidePosition = 0;
+[v _VFB_SlidePosition `uc ~T0 @X0 1 e ]
+[i _VFB_SlidePosition
+-> -> 0 `i `uc
+]
+"31
+[; ;vfb/vfb.c: 31: uint16 VFB_DriverWeight = 0;
+[v _VFB_DriverWeight `us ~T0 @X0 1 e ]
+[i _VFB_DriverWeight
+-> -> 0 `i `us
+]

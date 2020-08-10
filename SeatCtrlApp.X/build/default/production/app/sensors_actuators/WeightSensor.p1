@@ -1,0 +1,30 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"16 app/sensors_actuators/../../rte/Rte_WeightSensor.h
+[; ;app/sensors_actuators/../../rte/Rte_WeightSensor.h: 16: Std_ReturnType Rte_Call_WeightSensor_rpIOGetWeight_IOGet(IoWeightSensorReadingType* weight);
+[v _Rte_Call_WeightSensor_rpIOGetWeight_IOGet `(uc ~T0 @X0 0 ef1`*us ]
+"25 app/sensors_actuators/WeightSensor.c
+[; ;app/sensors_actuators/WeightSensor.c: 25: void WeightSensor_GetWeight (SensorWeightType* Weight)
+[v _WeightSensor_GetWeight `(v ~T0 @X0 1 ef1`*uc ]
+"26
+[; ;app/sensors_actuators/WeightSensor.c: 26: {
+{
+[e :U _WeightSensor_GetWeight ]
+"25
+[; ;app/sensors_actuators/WeightSensor.c: 25: void WeightSensor_GetWeight (SensorWeightType* Weight)
+[v _Weight `*uc ~T0 @X0 1 r1 ]
+"26
+[; ;app/sensors_actuators/WeightSensor.c: 26: {
+[f ]
+"27
+[; ;app/sensors_actuators/WeightSensor.c: 27:  IoWeightSensorReadingType weight;
+[v _weight `us ~T0 @X0 1 a ]
+"30
+[; ;app/sensors_actuators/WeightSensor.c: 30:  (void)Rte_Call_WeightSensor_rpIOGetWeight_IOGet(&weight);
+[e ( _Rte_Call_WeightSensor_rpIOGetWeight_IOGet (1 &U _weight ]
+"32
+[; ;app/sensors_actuators/WeightSensor.c: 32:  *Weight = (SensorWeightType)(weight/100);
+[e = *U _Weight -> / -> _weight `ui -> -> 100 `i `ui `uc ]
+"33
+[; ;app/sensors_actuators/WeightSensor.c: 33: }
+[e :UE 1 ]
+}

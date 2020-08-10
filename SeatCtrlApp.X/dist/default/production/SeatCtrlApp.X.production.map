@@ -1,0 +1,2697 @@
+Microchip MPLAB XC8 Compiler V2.20
+
+Linker command line:
+
+-W-3 --edf=C:\Program Files\Microchip\xc8\v2.20\pic\dat\en_msgs.txt -cn \
+  -h+dist/default/production\SeatCtrlApp.X.production.sym \
+  --cmf=dist/default/production\SeatCtrlApp.X.production.cmf -z -Q16F877A \
+  -oC:\Users\mosta\AppData\Local\Temp\s35o.2 --defsym=__MPLAB_BUILD=1 \
+  -Mdist/default/production/SeatCtrlApp.X.production.map -E1 \
+  -ver=XC8 Compiler --acfsm=1493 -ASTACK=0110h-016Fh -pstack=STACK \
+  -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 \
+  -ACONST=00h-0FFhx32 -AENTRY=00h-0FFhx32 -ACOMMON=070h-07Fh \
+  -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh -ABANK2=0110h-016Fh \
+  -ABANK3=0190h-01EFh -ARAM=020h-06Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh \
+  -AABS1=020h-07Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh -ASFR0=00h-01Fh \
+  -ASFR1=080h-09Fh -ASFR2=0100h-010Fh -ASFR3=0180h-018Fh \
+  -ACONFIG=02007h-02007h -DCONFIG=2 -AIDLOC=02000h-02003h -DIDLOC=2 \
+  -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pcinit=CODE \
+  -pfunctab=ENTRY -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA -DEEDATA=2 \
+  -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
+  C:\Users\mosta\AppData\Local\Temp\s35o.o \
+  dist/default/production\SeatCtrlApp.X.production.o 
+
+Object code version is 3.11
+
+Machine type is 16F877A
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\mosta\AppData\Local\Temp\s35o.o
+                end_init                             12       12        3        8       0
+                reset_vec                             0        0        3        0       0
+                config                             2007     2007        1        0       4
+dist/default/production\SeatCtrlApp.X.production.o
+                cinit                                15       15       27        8       0
+                functab                              3C       3C       10       78       0
+                intentry                              4        4        E        8       0
+                config                             2007     2007        1        0       4
+                text55                              198      198       67       98       0
+                text54                              7FD      7FD        1      56E       0
+                text53                              4A7      4A7       39      56E       0
+                text52                              733      733        F      56E       0
+                text51                              306      306       4A      56E       0
+                text50                              7FC      7FC        1      56E       0
+                text49                              1FF      1FF       5F       98       0
+                text48                              2B7      2B7       4F      56E       0
+                text47                              765      765        B      56E       0
+                text46                              FC3      FC3        6     1F86       0
+                text45                              7F2      7F2        A      56E       0
+                text44                              FC9      FC9        6     1F92       0
+                text43                              6DD      6DD       19      56E       0
+                text42                              7E8      7E8        A      56E       0
+                text41                              6F6      6F6       18      56E       0
+                text40                              12F      12F       69       98       0
+                text39                               4C       4C       E3       98       0
+                text38                              68C      68C       1F      56E       0
+                text37                              7DE      7DE        A      56E       0
+                text36                              463      463       44      56E       0
+                text35                              7D4      7D4        A      56E       0
+                text34                              742      742        D      56E       0
+                text33                              60C      60C       22      56E       0
+                text32                              62E      62E       20      56E       0
+                text31                              7CA      7CA        A      56E       0
+                text30                              350      350       46      56E       0
+                text29                              5EA      5EA       22      56E       0
+                text28                              7C0      7C0        A      56E       0
+                text27                              571      571       2D      56E       0
+                text26                              75A      75A        B      56E       0
+                text25                              FCF      FCF        6     1F9E       0
+                text24                              7B6      7B6        A      56E       0
+                text23                              FD5      FD5        6     1FAA       0
+                text22                              6C4      6C4       19      56E       0
+                text21                              7AC      7AC        A      56E       0
+                text20                              66D      66D       1F      56E       0
+                text19                              7A2      7A2        A      56E       0
+                text18                              41F      41F       44      56E       0
+                text17                              798      798        A      56E       0
+                text16                              544      544       2D      56E       0
+                text15                              74F      74F        B      56E       0
+                text14                              FDB      FDB        6     1FB6       0
+                text13                              78E      78E        A      56E       0
+                text12                              FE1      FE1        6     1FC2       0
+                text11                              6AB      6AB       19      56E       0
+                text10                              784      784        A      56E       0
+                text9                               64E      64E       1F      56E       0
+                text8                               77A      77A        A      56E       0
+                text7                               3DB      3DB       44      56E       0
+                text6                               770      770        A      56E       0
+                text5                               517      517       2D      56E       0
+                text4                               396      396       45      56E       0
+                text3                               59E      59E       2A      56E       0
+                text2                               721      721       12      56E       0
+                text1                               5C8      5C8       22      56E       0
+                maintext                            FE7      FE7        8     1FCE       0
+                cstackBANK0                          46       46       1F       20       1
+                cstackCOMMON                         70       70        E       70       1
+                clrtext                             FEF      FEF        8     1FDE       0
+                inittext                            70E      70E       13      56E       0
+                dataBANK1                            A0       A0       37       A0       1
+                dataBANK0                            65       65        9       20       1
+                bssBANK0                             20       20       26       20       1
+                strings                             25E      25E       59      4BC       0
+                idataBANK1                          4E0      4E0       37      56E       0
+                idataBANK0                          FF7      FF7        9     1FEE       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   STACK          
+
+        CLASS   CODE           
+                end_init                             12       12        3         0
+                cinit                                15       15       27         0
+                intentry                              4        4        E         0
+                reset_vec                             0        0        3         0
+                text55                              198      198       67         0
+                text54                              7FD      7FD        1         0
+                text53                              4A7      4A7       39         0
+                text52                              733      733        F         0
+                text51                              306      306       4A         0
+                text50                              7FC      7FC        1         0
+                text49                              1FF      1FF       5F         0
+                text48                              2B7      2B7       4F         0
+                text47                              765      765        B         0
+                text46                              FC3      FC3        6         0
+                text45                              7F2      7F2        A         0
+                text44                              FC9      FC9        6         0
+                text43                              6DD      6DD       19         0
+                text42                              7E8      7E8        A         0
+                text41                              6F6      6F6       18         0
+                text40                              12F      12F       69         0
+                text39                               4C       4C       E3         0
+                text38                              68C      68C       1F         0
+                text37                              7DE      7DE        A         0
+                text36                              463      463       44         0
+                text35                              7D4      7D4        A         0
+                text34                              742      742        D         0
+                text33                              60C      60C       22         0
+                text32                              62E      62E       20         0
+                text31                              7CA      7CA        A         0
+                text30                              350      350       46         0
+                text29                              5EA      5EA       22         0
+                text28                              7C0      7C0        A         0
+                text27                              571      571       2D         0
+                text26                              75A      75A        B         0
+                text25                              FCF      FCF        6         0
+                text24                              7B6      7B6        A         0
+                text23                              FD5      FD5        6         0
+                text22                              6C4      6C4       19         0
+                text21                              7AC      7AC        A         0
+                text20                              66D      66D       1F         0
+                text19                              7A2      7A2        A         0
+                text18                              41F      41F       44         0
+                text17                              798      798        A         0
+                text16                              544      544       2D         0
+                text15                              74F      74F        B         0
+                text14                              FDB      FDB        6         0
+                text13                              78E      78E        A         0
+                text12                              FE1      FE1        6         0
+                text11                              6AB      6AB       19         0
+                text10                              784      784        A         0
+                text9                               64E      64E       1F         0
+                text8                               77A      77A        A         0
+                text7                               3DB      3DB       44         0
+                text6                               770      770        A         0
+                text5                               517      517       2D         0
+                text4                               396      396       45         0
+                text3                               59E      59E       2A         0
+                text2                               721      721       12         0
+                text1                               5C8      5C8       22         0
+                maintext                            FE7      FE7        8         0
+                clrtext                             FEF      FEF        8         0
+                inittext                            70E      70E       13         0
+                idataBANK1                          4E0      4E0       37         0
+                idataBANK0                          FF7      FF7        9         0
+
+        CLASS   STRCODE        
+
+        CLASS   STRING         
+                strings                             25E      25E       59         0
+
+        CLASS   CONST          
+
+        CLASS   ENTRY          
+                functab                              3C       3C       10         0
+
+        CLASS   COMMON         
+                cstackCOMMON                         70       70        E         1
+
+        CLASS   BANK0          
+                cstackBANK0                          46       46       1F         1
+                dataBANK0                            65       65        9         1
+                bssBANK0                             20       20       26         1
+
+        CLASS   BANK1          
+                dataBANK1                            A0       A0       37         1
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+                abs_s1                               7E       7E        2         1
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   SFR2           
+
+        CLASS   SFR3           
+
+        CLASS   CONFIG         
+                config                             2007     2007        1         4
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                reset_vec                      000000  000003  000003         0       0  CODE        2
+                intentry                       000004  000038  00003C         8       0  CODE        2
+                bssBANK0                       000020  00004E  00006E        20       1  BANK0       1
+                cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
+                functab                        00003C  000010  00004C        78       0  ENTRY       2
+                text39                         00004C  000212  00025E        98       0  CODE        2
+                dataBANK1                      0000A0  000037  0000D7        A0       1  BANK1       1
+                strings                        00025E  000059  0002B7       4BC       0  STRING      2
+                text48                         0002B7  000547  0007FE       56E       0  CODE        2
+                text46                         000FC3  000006  000FC9      1F86       0  CODE        2
+                text44                         000FC9  000006  000FCF      1F92       0  CODE        2
+                text25                         000FCF  000006  000FD5      1F9E       0  CODE        2
+                text23                         000FD5  000006  000FDB      1FAA       0  CODE        2
+                text14                         000FDB  000006  000FE1      1FB6       0  CODE        2
+                text12                         000FE1  000006  000FE7      1FC2       0  CODE        2
+                maintext                       000FE7  000008  000FEF      1FCE       0  CODE        2
+                clrtext                        000FEF  000008  000FF7      1FDE       0  CODE        2
+                idataBANK0                     000FF7  000009  001000      1FEE       0  CODE        2
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            006E-006F              2           1
+        BANK1            00D7-00EF             19           1
+        BANK2            0110-016F             60           1
+        BANK3            0190-01EF             60           1
+        CODE             0003-0003              1           2
+                         07FE-0FC2              2
+                         1000-1FFF            800
+        CONST            0003-0003              1           2
+                         07FE-0FC2            100
+                         1000-1FFF            100
+        EEDATA           2100-21FF            100           2
+        ENTRY            0003-0003              1           2
+                         07FE-0FC2            100
+                         1000-1FFF            100
+        IDLOC            2000-2003              4           2
+        RAM              006E-006F              2           1
+                         00D7-00EF             19
+                         0110-016F             60
+                         0190-01EF             60
+        SFR0             0000-001F             20           1
+        SFR1             0080-009F             20           1
+        SFR2             0100-010F             10           1
+        SFR3             0180-018F             10           1
+        STACK            0110-016F             60           1
+        STRCODE          0003-0003              1           2
+                         07FE-0FC2            7C5
+                         1000-1FFF           1000
+        STRING           0003-0003              1           2
+                         07FE-0FC2            100
+                         1000-1FFF            100
+
+                                  Symbol Table
+
+?___awdiv                                                   cstackBANK0  0046
+?___lwdiv                                                   cstackBANK0  0046
+?i1___awdiv                                                 cstackCOMMON 0070
+Adc_ReadGroup@DataBufferPtr                                 cstackBANK0  004E
+Adc_ReadGroup@i                                             cstackBANK0  0051
+Adc_ReadGroup@i_495                                         cstackBANK0  0052
+CyclicTask@TaskCounter                                      bssBANK0     0036
+Dio_WriteChannel@ChannelId                                  cstackBANK0  004C
+Dio_WriteChannel@Level                                      cstackBANK0  0046
+Dio_WriteChannel@Port_Ptr                                   cstackBANK0  004A
+HeightMotor_Move@Step                                       cstackBANK0  004D
+HeightSensor_GetPosition@Position                           cstackBANK0  0056
+HeightSensor_GetPosition@position                           cstackBANK0  0057
+InclineMotor_Move@Step                                      cstackBANK0  004D
+InclineSensor_GetPosition@Position                          cstackBANK0  0056
+InclineSensor_GetPosition@position                          cstackBANK0  0057
+IoHwAbs_ECUGet_Height@position                              cstackBANK0  0054
+IoHwAbs_ECUGet_Height@status                                cstackBANK0  0053
+IoHwAbs_ECUGet_Incline@position                             cstackBANK0  0054
+IoHwAbs_ECUGet_Incline@status                               cstackBANK0  0053
+IoHwAbs_ECUGet_Slide@position                               cstackBANK0  0054
+IoHwAbs_ECUGet_Slide@status                                 cstackBANK0  0053
+IoHwAbs_ECUGet_Weight@spiData                               cstackBANK0  004B
+IoHwAbs_ECUGet_Weight@status                                cstackBANK0  0049
+IoHwAbs_ECUGet_Weight@weight                                cstackBANK0  004A
+IsMotorAdjustNeeded@Position                                cstackBANK0  004A
+IsMotorAdjustNeeded@Step                                    cstackBANK0  0047
+IsMotorAdjustNeeded@Weight                                  cstackBANK0  0046
+IsMotorAdjustNeeded@adjustMotor                             cstackBANK0  004B
+Os_SetRelAlarm@cycle                                        cstackBANK0  0061
+Os_SetRelAlarm@offset                                       cstackBANK0  005D
+Rte_Call_HeightSensor_rpIOGetHeight_IOGet@position          cstackBANK0  0055
+Rte_Call_InclineSensor_rpIOGetIncline_IOGet@position        cstackBANK0  0055
+Rte_Call_SeatManager_rpHeightMotor_Move@Step                cstackBANK0  004E
+Rte_Call_SeatManager_rpHeightSensor_GetPosition@Position    cstackBANK0  0058
+Rte_Call_SeatManager_rpInclineMotor_Move@Step               cstackBANK0  004E
+Rte_Call_SeatManager_rpInclineSensor_GetPosition@Position   cstackBANK0  0058
+Rte_Call_SeatManager_rpSlideMotor_Move@Step                 cstackBANK0  004E
+Rte_Call_SeatManager_rpSlideSensor_GetPosition@Position     cstackBANK0  0058
+Rte_Call_SeatManager_rpWeightSensor_GetWeight@Weight        cstackBANK0  0051
+Rte_Call_SlideSensor_rpIOGetSlide_IOGet@position            cstackBANK0  0055
+Rte_Call_WeightSensor_rpIOGetWeight_IOGet@weight            cstackBANK0  004D
+SeatManager_AutoHeight@Position                             cstackBANK0  005B
+SeatManager_AutoHeight@Step                                 cstackBANK0  005C
+SeatManager_AutoHeight@Weight                               cstackBANK0  005A
+SeatManager_AutoHeight@adjustMotor                          cstackBANK0  0059
+SeatManager_AutoIncline@Position                            cstackBANK0  005B
+SeatManager_AutoIncline@Step                                cstackBANK0  005C
+SeatManager_AutoIncline@Weight                              cstackBANK0  005A
+SeatManager_AutoIncline@adjustMotor                         cstackBANK0  0059
+SeatManager_AutoSlide@Position                              cstackBANK0  005B
+SeatManager_AutoSlide@Step                                  cstackBANK0  005C
+SeatManager_AutoSlide@Weight                                cstackBANK0  005A
+SeatManager_AutoSlide@adjustMotor                           cstackBANK0  0059
+SlideMotor_Move@Step                                        cstackBANK0  004D
+SlideSensor_GetPosition@Position                            cstackBANK0  0056
+SlideSensor_GetPosition@position                            cstackBANK0  0057
+Spi_ReadIB@DataBufferPtr                                    cstackBANK0  0046
+WeightSensor_GetWeight@Weight                               cstackBANK0  004E
+WeightSensor_GetWeight@weight                               cstackBANK0  004F
+_ACKEN                                                      (abs)        048C
+_ACKSTAT                                                    (abs)        048E
+_ADCON0                                                     (abs)        001F
+_ADCON1                                                     (abs)        009F
+_ADIE                                                       (abs)        0466
+_ADIF                                                       (abs)        0066
+_ADRESH                                                     (abs)        001E
+_ADRESL                                                     (abs)        009E
+_Adc_CallbackFn                                             text53       04A7
+_Adc_Handler                                                (abs)        0000
+_Adc_PortConfig                                             dataBANK1    00B9
+_Adc_ReadGroup                                              text39       004C
+_Adc_Result                                                 bssBANK0     0040
+_Adc_StartGroupConversion                                   text41       06F6
+_Adc_ThisConfiguration                                      bssBANK0     0041
+_AppTsk_CurrentEvents                                       bssBANK0     002B
+_CyclicTask                                                 text4        0396
+_Dio_ConfigGroupChannel                                     dataBANK0    0065
+_Dio_WriteChannel                                           text48       02B7
+_GIE                                                        (abs)        005F
+_HeightMotor_Move                                           text43       06DD
+_HeightSensor_GetPosition                                   text36       0463
+_INTE                                                       (abs)        005C
+_INTEDG                                                     (abs)        040E
+_INTF                                                       (abs)        0059
+_ISR                                                        text51       0306
+_InclineMotor_Move                                          text22       06C4
+_InclineSensor_GetPosition                                  text18       041F
+_IoHwAb_PositionSensorsReadings                             bssBANK0     0043
+_IoHwAbs_ECUGet_Height                                      text38       068C
+_IoHwAbs_ECUGet_Incline                                     text20       066D
+_IoHwAbs_ECUGet_Slide                                       text9        064E
+_IoHwAbs_ECUGet_Weight                                      text32       062E
+_IoHwAbs_ECUSetForward_Height                               text47       0765
+_IoHwAbs_ECUSetForward_Incline                              text26       075A
+_IoHwAbs_ECUSetForward_Slide                                text15       074F
+_IoHwAbs_ECUSetReverse_Height                               text45       07F2
+_IoHwAbs_ECUSetReverse_Incline                              text24       07B6
+_IoHwAbs_ECUSetReverse_Slide                                text13       078E
+_IsMotorAdjustNeeded                                        text49       01FF
+_Os_SetRelAlarm                                             text2        0721
+_Os_TerminateTask                                           text50       07FC
+_PEIE                                                       (abs)        005E
+_RCIE                                                       (abs)        0465
+_RCIF                                                       (abs)        0065
+_RCREG                                                      (abs)        001A
+_RCSTA                                                      (abs)        0018
+_RX_Data                                                    bssBANK0     0034
+_Rte_Call_HeightMotor_rpIOSetHeight_IOSetForward            text46       0FC3
+_Rte_Call_HeightMotor_rpIOSetHeight_IOSetReverse            text44       0FC9
+_Rte_Call_HeightSensor_rpIOGetHeight_IOGet                  text37       07DE
+_Rte_Call_InclineMotor_rpIOSetIncline_IOSetForward          text25       0FCF
+_Rte_Call_InclineMotor_rpIOSetIncline_IOSetReverse          text23       0FD5
+_Rte_Call_InclineSensor_rpIOGetIncline_IOGet                text19       07A2
+_Rte_Call_SeatManager_rpHeightMotor_Move                    text42       07E8
+_Rte_Call_SeatManager_rpHeightSensor_GetPosition            text35       07D4
+_Rte_Call_SeatManager_rpInclineMotor_Move                   text21       07AC
+_Rte_Call_SeatManager_rpInclineSensor_GetPosition           text17       0798
+_Rte_Call_SeatManager_rpSlideMotor_Move                     text10       0784
+_Rte_Call_SeatManager_rpSlideSensor_GetPosition             text6        0770
+_Rte_Call_SeatManager_rpWeightSensor_GetWeight              text28       07C0
+_Rte_Call_SlideMotor_rpIOSetSlide_IOSetForward              text14       0FDB
+_Rte_Call_SlideMotor_rpIOSetSlide_IOSetReverse              text12       0FE1
+_Rte_Call_SlideSensor_rpIOGetSlide_IOGet                    text8        077A
+_Rte_Call_WeightSensor_rpIOGetWeight_IOGet                  text31       07CA
+_Rte_SenderReceiverBuffers                                  bssBANK0     002F
+_Rte_SenderReceiverFlags                                    bssBANK0     0020
+_Rte_Start                                                  text1        05C8
+_SPBRG                                                      (abs)        0099
+_SPI_Master_Wait                                            text34       0742
+_SSPADD                                                     (abs)        0093
+_SSPBUF                                                     (abs)        0013
+_SSPCON                                                     (abs)        0014
+_SSPCON2                                                    (abs)        0091
+_SSPIF                                                      (abs)        0063
+_SSPSTAT                                                    (abs)        0094
+_SeatCtrlMode_CurrentMode                                   bssBANK0     0037
+_SeatManager_AutoHeight                                     text27       0571
+_SeatManager_AutoIncline                                    text16       0544
+_SeatManager_AutoSlide                                      text5        0517
+_SlideMotor_Move                                            text11       06AB
+_SlideSensor_GetPosition                                    text7        03DB
+_Spi_ConfigPins                                             dataBANK1    00D1
+_Spi_ReadIB                                                 text33       060C
+_Spi_ThisConfiguration                                      bssBANK0     0038
+_TMR1IE                                                     (abs)        0460
+_TMR1IF                                                     (abs)        0060
+_TXIE                                                       (abs)        0464
+_TXIF                                                       (abs)        0064
+_TXREG                                                      (abs)        0019
+_TXSTA                                                      (abs)        0098
+_Uart_Config                                                dataBANK1    00C2
+_Uart_PinsConfig                                            dataBANK1    00CB
+_Uart_RX_Callback                                           text52       0733
+_Uart_TX_Callback                                           text54       07FD
+_Uart_ThisConfiguration                                     bssBANK0     0035
+_WeightSensor_GetWeight                                     text29       05EA
+__Habs1                                                     abs1         0000
+__Hbank0                                                    bank0        0000
+__Hbank1                                                    bank1        0000
+__Hbank2                                                    bank2        0000
+__Hbank3                                                    bank3        0000
+__HbssBANK0                                                 bssBANK0     0000
+__Hcinit                                                    cinit        003C
+__Hclrtext                                                  clrtext      0000
+__Hcode                                                     code         0000
+__Hcommon                                                   common       0000
+__Hconfig                                                   config       2008
+__HcstackBANK0                                              cstackBANK0  0000
+__HcstackCOMMON                                             cstackCOMMON 0000
+__HdataBANK0                                                dataBANK0    0000
+__HdataBANK1                                                dataBANK1    0000
+__Heeprom_data                                              eeprom_data  0000
+__Hend_init                                                 end_init     0015
+__Hfunctab                                                  functab      004C
+__HidataBANK0                                               idataBANK0   0000
+__HidataBANK1                                               idataBANK1   0000
+__Hinit                                                     init         0012
+__Hinittext                                                 inittext     0000
+__Hintentry                                                 intentry     0012
+__Hmaintext                                                 maintext     0000
+__Hpowerup                                                  powerup      0000
+__Hram                                                      ram          0000
+__Hreset_vec                                                reset_vec    0003
+__Hsfr0                                                     sfr0         0000
+__Hsfr1                                                     sfr1         0000
+__Hsfr2                                                     sfr2         0000
+__Hsfr3                                                     sfr3         0000
+__Hspace_0                                                  (abs)        1000
+__Hspace_1                                                  (abs)        00D7
+__Hspace_2                                                  (abs)        0000
+__Hspace_3                                                  (abs)        0000
+__Hspace_4                                                  (abs)        400F
+__Hstack                                                    stack        0000
+__Hstrings                                                  strings      0000
+__Htext                                                     text         0000
+__Labs1                                                     abs1         0000
+__Lbank0                                                    bank0        0000
+__Lbank1                                                    bank1        0000
+__Lbank2                                                    bank2        0000
+__Lbank3                                                    bank3        0000
+__LbssBANK0                                                 bssBANK0     0000
+__Lcinit                                                    cinit        0015
+__Lclrtext                                                  clrtext      0000
+__Lcode                                                     code         0000
+__Lcommon                                                   common       0000
+__Lconfig                                                   config       0000
+__LcstackBANK0                                              cstackBANK0  0000
+__LcstackCOMMON                                             cstackCOMMON 0000
+__LdataBANK0                                                dataBANK0    0000
+__LdataBANK1                                                dataBANK1    0000
+__Leeprom_data                                              eeprom_data  0000
+__Lend_init                                                 end_init     0012
+__Lfunctab                                                  functab      003C
+__LidataBANK0                                               idataBANK0   0000
+__LidataBANK1                                               idataBANK1   0000
+__Linit                                                     init         0012
+__Linittext                                                 inittext     0000
+__Lintentry                                                 intentry     0004
+__Lmaintext                                                 maintext     0000
+__Lpowerup                                                  powerup      0000
+__Lram                                                      ram          0000
+__Lreset_vec                                                reset_vec    0000
+__Lsfr0                                                     sfr0         0000
+__Lsfr1                                                     sfr1         0000
+__Lsfr2                                                     sfr2         0000
+__Lsfr3                                                     sfr3         0000
+__Lspace_0                                                  (abs)        0000
+__Lspace_1                                                  (abs)        0000
+__Lspace_2                                                  (abs)        0000
+__Lspace_3                                                  (abs)        0000
+__Lspace_4                                                  (abs)        0000
+__Lstack                                                    stack        0000
+__Lstrings                                                  strings      0000
+__Ltext                                                     text         0000
+__S0                                                        (abs)        1000
+__S1                                                        (abs)        00D7
+__S2                                                        (abs)        0000
+__S3                                                        (abs)        0000
+___awdiv                                                    text40       012F
+___awdiv@counter                                            cstackBANK0  004A
+___awdiv@dividend                                           cstackBANK0  0048
+___awdiv@divisor                                            cstackBANK0  0046
+___awdiv@quotient                                           cstackBANK0  004C
+___awdiv@sign                                               cstackBANK0  004B
+___int_sp                                                   stack        0000
+___latbits                                                  (abs)        0002
+___lwdiv                                                    text30       0350
+___lwdiv@counter                                            cstackBANK0  004C
+___lwdiv@dividend                                           cstackBANK0  0048
+___lwdiv@divisor                                            cstackBANK0  0046
+___lwdiv@quotient                                           cstackBANK0  004A
+___sp                                                       stack        0000
+___stackhi                                                  (abs)        0000
+___stacklo                                                  (abs)        0000
+__end_of_Adc_CallbackFn                                     text53       04E0
+__end_of_Adc_ReadGroup                                      text39       012F
+__end_of_Adc_StartGroupConversion                           text41       070E
+__end_of_CyclicTask                                         text4        03DB
+__end_of_Dio_WriteChannel                                   text48       0306
+__end_of_HeightMotor_Move                                   text43       06F6
+__end_of_HeightSensor_GetPosition                           text36       04A7
+__end_of_ISR                                                text51       0350
+__end_of_InclineMotor_Move                                  text22       06DD
+__end_of_InclineSensor_GetPosition                          text18       0463
+__end_of_IoHwAbs_ECUGet_Height                              text38       06AB
+__end_of_IoHwAbs_ECUGet_Incline                             text20       068C
+__end_of_IoHwAbs_ECUGet_Slide                               text9        066D
+__end_of_IoHwAbs_ECUGet_Weight                              text32       064E
+__end_of_IoHwAbs_ECUSetForward_Height                       text47       0770
+__end_of_IoHwAbs_ECUSetForward_Incline                      text26       0765
+__end_of_IoHwAbs_ECUSetForward_Slide                        text15       075A
+__end_of_IoHwAbs_ECUSetReverse_Height                       text45       07FC
+__end_of_IoHwAbs_ECUSetReverse_Incline                      text24       07C0
+__end_of_IoHwAbs_ECUSetReverse_Slide                        text13       0798
+__end_of_IsMotorAdjustNeeded                                text49       025E
+__end_of_Os_SetRelAlarm                                     text2        0733
+__end_of_Os_TerminateTask                                   text50       07FD
+__end_of_Rte_Call_HeightMotor_rpIOSetHeight_IOSetForward    text46       0FC9
+__end_of_Rte_Call_HeightMotor_rpIOSetHeight_IOSetReverse    text44       0FCF
+__end_of_Rte_Call_HeightSensor_rpIOGetHeight_IOGet          text37       07E8
+__end_of_Rte_Call_InclineMotor_rpIOSetIncline_IOSetForward  text25       0FD5
+__end_of_Rte_Call_InclineMotor_rpIOSetIncline_IOSetReverse  text23       0FDB
+__end_of_Rte_Call_InclineSensor_rpIOGetIncline_IOGet        text19       07AC
+__end_of_Rte_Call_SeatManager_rpHeightMotor_Move            text42       07F2
+__end_of_Rte_Call_SeatManager_rpHeightSensor_GetPosition    text35       07DE
+__end_of_Rte_Call_SeatManager_rpInclineMotor_Move           text21       07B6
+__end_of_Rte_Call_SeatManager_rpInclineSensor_GetPosition   text17       07A2
+__end_of_Rte_Call_SeatManager_rpSlideMotor_Move             text10       078E
+__end_of_Rte_Call_SeatManager_rpSlideSensor_GetPosition     text6        077A
+__end_of_Rte_Call_SeatManager_rpWeightSensor_GetWeight      text28       07CA
+__end_of_Rte_Call_SlideMotor_rpIOSetSlide_IOSetForward      text14       0FE1
+__end_of_Rte_Call_SlideMotor_rpIOSetSlide_IOSetReverse      text12       0FE7
+__end_of_Rte_Call_SlideSensor_rpIOGetSlide_IOGet            text8        0784
+__end_of_Rte_Call_WeightSensor_rpIOGetWeight_IOGet          text31       07D4
+__end_of_Rte_Start                                          text1        05EA
+__end_of_SPI_Master_Wait                                    text34       074F
+__end_of_SeatManager_AutoHeight                             text27       059E
+__end_of_SeatManager_AutoIncline                            text16       0571
+__end_of_SeatManager_AutoSlide                              text5        0544
+__end_of_SlideMotor_Move                                    text11       06C4
+__end_of_SlideSensor_GetPosition                            text7        041F
+__end_of_Spi_ReadIB                                         text33       062E
+__end_of_Uart_RX_Callback                                   text52       0742
+__end_of_Uart_TX_Callback                                   text54       07FE
+__end_of_WeightSensor_GetWeight                             text29       060C
+__end_of___awdiv                                            text40       0198
+__end_of___lwdiv                                            text30       0396
+__end_of__i1fptable                                         functab      004C
+__end_of__initialization                                    cinit        0038
+__end_of__stringtab                                         strings      026E
+__end_of_delay                                              text3        05C8
+__end_of_main                                               maintext     0FEF
+__end_ofi1___awdiv                                          text55       01FF
+__i1fptable                                                 functab      003D
+__initialization                                            cinit        0015
+__pbssBANK0                                                 bssBANK0     0020
+__pcstackBANK0                                              cstackBANK0  0046
+__pcstackCOMMON                                             cstackCOMMON 0070
+__pdataBANK0                                                dataBANK0    0065
+__pdataBANK1                                                dataBANK1    00A0
+__pfunctab                                                  functab      003C
+__pidataBANK0                                               idataBANK0   0FF7
+__pidataBANK1                                               idataBANK1   04E0
+__pintentry                                                 intentry     0004
+__pmaintext                                                 maintext     0FE7
+__pstrings                                                  strings      025E
+__ptext1                                                    text1        05C8
+__ptext10                                                   text10       0784
+__ptext11                                                   text11       06AB
+__ptext12                                                   text12       0FE1
+__ptext13                                                   text13       078E
+__ptext14                                                   text14       0FDB
+__ptext15                                                   text15       074F
+__ptext16                                                   text16       0544
+__ptext17                                                   text17       0798
+__ptext18                                                   text18       041F
+__ptext19                                                   text19       07A2
+__ptext2                                                    text2        0721
+__ptext20                                                   text20       066D
+__ptext21                                                   text21       07AC
+__ptext22                                                   text22       06C4
+__ptext23                                                   text23       0FD5
+__ptext24                                                   text24       07B6
+__ptext25                                                   text25       0FCF
+__ptext26                                                   text26       075A
+__ptext27                                                   text27       0571
+__ptext28                                                   text28       07C0
+__ptext29                                                   text29       05EA
+__ptext3                                                    text3        059E
+__ptext30                                                   text30       0350
+__ptext31                                                   text31       07CA
+__ptext32                                                   text32       062E
+__ptext33                                                   text33       060C
+__ptext34                                                   text34       0742
+__ptext35                                                   text35       07D4
+__ptext36                                                   text36       0463
+__ptext37                                                   text37       07DE
+__ptext38                                                   text38       068C
+__ptext39                                                   text39       004C
+__ptext4                                                    text4        0396
+__ptext40                                                   text40       012F
+__ptext41                                                   text41       06F6
+__ptext42                                                   text42       07E8
+__ptext43                                                   text43       06DD
+__ptext44                                                   text44       0FC9
+__ptext45                                                   text45       07F2
+__ptext46                                                   text46       0FC3
+__ptext47                                                   text47       0765
+__ptext48                                                   text48       02B7
+__ptext49                                                   text49       01FF
+__ptext5                                                    text5        0517
+__ptext50                                                   text50       07FC
+__ptext51                                                   text51       0306
+__ptext52                                                   text52       0733
+__ptext53                                                   text53       04A7
+__ptext54                                                   text54       07FD
+__ptext55                                                   text55       0198
+__ptext6                                                    text6        0770
+__ptext7                                                    text7        03DB
+__ptext8                                                    text8        077A
+__ptext9                                                    text9        064E
+__size_of_Adc_CallbackFn                                    (abs)        0000
+__size_of_Adc_ReadGroup                                     (abs)        0000
+__size_of_Adc_StartGroupConversion                          (abs)        0000
+__size_of_CyclicTask                                        (abs)        0000
+__size_of_Dio_WriteChannel                                  (abs)        0000
+__size_of_HeightMotor_Move                                  (abs)        0000
+__size_of_HeightSensor_GetPosition                          (abs)        0000
+__size_of_ISR                                               (abs)        0000
+__size_of_InclineMotor_Move                                 (abs)        0000
+__size_of_InclineSensor_GetPosition                         (abs)        0000
+__size_of_IoHwAbs_ECUGet_Height                             (abs)        0000
+__size_of_IoHwAbs_ECUGet_Incline                            (abs)        0000
+__size_of_IoHwAbs_ECUGet_Slide                              (abs)        0000
+__size_of_IoHwAbs_ECUGet_Weight                             (abs)        0000
+__size_of_IoHwAbs_ECUSetForward_Height                      (abs)        0000
+__size_of_IoHwAbs_ECUSetForward_Incline                     (abs)        0000
+__size_of_IoHwAbs_ECUSetForward_Slide                       (abs)        0000
+__size_of_IoHwAbs_ECUSetReverse_Height                      (abs)        0000
+__size_of_IoHwAbs_ECUSetReverse_Incline                     (abs)        0000
+__size_of_IoHwAbs_ECUSetReverse_Slide                       (abs)        0000
+__size_of_IsMotorAdjustNeeded                               (abs)        0000
+__size_of_Os_SetRelAlarm                                    (abs)        0000
+__size_of_Os_TerminateTask                                  (abs)        0000
+__size_of_Rte_Call_HeightMotor_rpIOSetHeight_IOSetForward   (abs)        0000
+__size_of_Rte_Call_HeightMotor_rpIOSetHeight_IOSetReverse   (abs)        0000
+__size_of_Rte_Call_HeightSensor_rpIOGetHeight_IOGet         (abs)        0000
+__size_of_Rte_Call_InclineMotor_rpIOSetIncline_IOSetForward (abs)        0000
+__size_of_Rte_Call_InclineMotor_rpIOSetIncline_IOSetReverse (abs)        0000
+__size_of_Rte_Call_InclineSensor_rpIOGetIncline_IOGet       (abs)        0000
+__size_of_Rte_Call_SeatManager_rpHeightMotor_Move           (abs)        0000
+__size_of_Rte_Call_SeatManager_rpHeightSensor_GetPosition   (abs)        0000
+__size_of_Rte_Call_SeatManager_rpInclineMotor_Move          (abs)        0000
+__size_of_Rte_Call_SeatManager_rpInclineSensor_GetPosition  (abs)        0000
+__size_of_Rte_Call_SeatManager_rpSlideMotor_Move            (abs)        0000
+__size_of_Rte_Call_SeatManager_rpSlideSensor_GetPosition    (abs)        0000
+__size_of_Rte_Call_SeatManager_rpWeightSensor_GetWeight     (abs)        0000
+__size_of_Rte_Call_SlideMotor_rpIOSetSlide_IOSetForward     (abs)        0000
+__size_of_Rte_Call_SlideMotor_rpIOSetSlide_IOSetReverse     (abs)        0000
+__size_of_Rte_Call_SlideSensor_rpIOGetSlide_IOGet           (abs)        0000
+__size_of_Rte_Call_WeightSensor_rpIOGetWeight_IOGet         (abs)        0000
+__size_of_Rte_Start                                         (abs)        0000
+__size_of_SPI_Master_Wait                                   (abs)        0000
+__size_of_SeatManager_AutoHeight                            (abs)        0000
+__size_of_SeatManager_AutoIncline                           (abs)        0000
+__size_of_SeatManager_AutoSlide                             (abs)        0000
+__size_of_SlideMotor_Move                                   (abs)        0000
+__size_of_SlideSensor_GetPosition                           (abs)        0000
+__size_of_Spi_ReadIB                                        (abs)        0000
+__size_of_Uart_RX_Callback                                  (abs)        0000
+__size_of_Uart_TX_Callback                                  (abs)        0000
+__size_of_WeightSensor_GetWeight                            (abs)        0000
+__size_of___awdiv                                           (abs)        0000
+__size_of___lwdiv                                           (abs)        0000
+__size_of__i1fptable                                        (abs)        0000
+__size_of_delay                                             (abs)        0000
+__size_of_main                                              (abs)        0000
+__size_ofi1___awdiv                                         (abs)        0000
+__stringbase                                                strings      026D
+__stringtab                                                 strings      025E
+_callbackTable                                              bssBANK0     0026
+_delay                                                      text3        059E
+_main                                                       maintext     0FE7
+btemp                                                       (abs)        007E
+clear_ram0                                                  clrtext      0FEF
+delay@milli_seconds                                         cstackBANK0  0046
+end_of_initialization                                       cinit        0038
+fpbase                                                      (abs)        0000
+fptable                                                     functab      003C
+fptotal                                                     (abs)        0000
+i1___awdiv                                                  text55       0198
+i1___awdiv@counter                                          cstackCOMMON 0074
+i1___awdiv@dividend                                         cstackCOMMON 0072
+i1___awdiv@divisor                                          cstackCOMMON 0070
+i1___awdiv@quotient                                         cstackCOMMON 0076
+i1___awdiv@sign                                             cstackCOMMON 0075
+i1fpbase                                                    functab      0042
+i1fptable                                                   functab      003D
+i1fptotal                                                   (abs)        0003
+init_fetch0                                                 inittext     070E
+init_ram0                                                   inittext     0712
+interrupt_function                                          intentry     0004
+intlevel0                                                   functab      003C
+intlevel1                                                   functab      003C
+intlevel2                                                   functab      003C
+intlevel3                                                   functab      003C
+intlevel4                                                   functab      003C
+intlevel5                                                   functab      003C
+reset_vec                                                   reset_vec    0000
+saved_w                                                     (abs)        007E
+start                                                       init         0012
+start_initialization                                        cinit        0015
+wtemp0                                                      (abs)        007E
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 5 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  2   42[None  ] int 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels required when called:   13
+ This function calls:
+		_Rte_Start
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Start *****************
+ Defined at:
+		line 414 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   12
+ This function calls:
+		_Os_SetRelAlarm
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _Os_SetRelAlarm *****************
+ Defined at:
+		line 43 in file "bsw/static/Os.c"
+ Parameters:    Size  Location     Type
+  alarmID         1    wreg     unsigned char 
+  offset          4   23[BANK0 ] unsigned long 
+  cycle           4   27[BANK0 ] unsigned long 
+ Auto vars:     Size  Location     Type
+  alarmID         1    0[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       8       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       8       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_CyclicTask
+		_delay
+ This function is called by:
+		_Rte_Start
+ This function uses a non-reentrant model
+
+
+ *************** function _delay *****************
+ Defined at:
+		line 13 in file "bsw/static/Os.c"
+ Parameters:    Size  Location     Type
+  milli_second    2    0[BANK0 ] int 
+ Auto vars:     Size  Location     Type
+  start_time      4    0        long 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       2       0       0       0
+      Locals:         0       4       0       0       0
+      Temps:          0       8       0       0       0
+      Totals:         0      14       0       0       0
+Total ram usage:       14 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_Os_SetRelAlarm
+ This function uses a non-reentrant model
+
+
+ *************** function _CyclicTask *****************
+ Defined at:
+		line 330 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_Os_TerminateTask
+		_SeatManager_AutoHeight
+		_SeatManager_AutoIncline
+		_SeatManager_AutoSlide
+ This function is called by:
+		_Os_SetRelAlarm
+		_Os_ActivateTask
+ This function uses a non-reentrant model
+
+
+ *************** function _SeatManager_AutoSlide *****************
+ Defined at:
+		line 190 in file "app/appswcs/SeatManager.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  Step            1   22[BANK0 ] unsigned char 
+  Position        1   21[BANK0 ] unsigned char 
+  Weight          1   20[BANK0 ] unsigned char 
+  adjustMotor     1   19[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       4       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       4       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_IsMotorAdjustNeeded
+		_Rte_Call_SeatManager_rpSlideMotor_Move
+		_Rte_Call_SeatManager_rpSlideSensor_GetPosition
+		_Rte_Call_SeatManager_rpWeightSensor_GetWeight
+ This function is called by:
+		_CyclicTask
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Call_SeatManager_rpSlideSensor_GetPosition *****************
+ Defined at:
+		line 268 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+  Position        1    wreg     PTR unsigned char 
+		 -> SeatManager_AutoSlide@Position(1), 
+ Auto vars:     Size  Location     Type
+  Position        1   18[BANK0 ] PTR unsigned char 
+		 -> SeatManager_AutoSlide@Position(1), 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       1       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_SlideSensor_GetPosition
+ This function is called by:
+		_SeatManager_AutoSlide
+ This function uses a non-reentrant model
+
+
+ *************** function _SlideSensor_GetPosition *****************
+ Defined at:
+		line 25 in file "app/sensors_actuators/SlideSensor.c"
+ Parameters:    Size  Location     Type
+  Position        1    wreg     PTR unsigned char 
+		 -> SeatManager_AutoSlide@Position(1), 
+ Auto vars:     Size  Location     Type
+  Position        1   16[BANK0 ] PTR unsigned char 
+		 -> SeatManager_AutoSlide@Position(1), 
+  position        1   17[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       2       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       2       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_Rte_Call_SlideSensor_rpIOGetSlide_IOGet
+ This function is called by:
+		_Rte_Call_SeatManager_rpSlideSensor_GetPosition
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Call_SlideSensor_rpIOGetSlide_IOGet *****************
+ Defined at:
+		line 226 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+  position        1    wreg     PTR unsigned char 
+		 -> SlideSensor_GetPosition@position(1), 
+ Auto vars:     Size  Location     Type
+  position        1   15[BANK0 ] PTR unsigned char 
+		 -> SlideSensor_GetPosition@position(1), 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       1       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_IoHwAbs_ECUGet_Slide
+ This function is called by:
+		_SlideSensor_GetPosition
+ This function uses a non-reentrant model
+
+
+ *************** function _IoHwAbs_ECUGet_Slide *****************
+ Defined at:
+		line 102 in file "app/sensors_actuators/IoHwAbs.c"
+ Parameters:    Size  Location     Type
+  position        1    wreg     PTR unsigned char 
+		 -> SlideSensor_GetPosition@position(1), 
+ Auto vars:     Size  Location     Type
+  position        1   14[BANK0 ] PTR unsigned char 
+		 -> SlideSensor_GetPosition@position(1), 
+  status          1   13[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       2       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       2       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_Adc_ReadGroup
+ This function is called by:
+		_Rte_Call_SlideSensor_rpIOGetSlide_IOGet
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Call_SeatManager_rpSlideMotor_Move *****************
+ Defined at:
+		line 250 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+  Step            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  Step            1    8[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       1       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_SlideMotor_Move
+ This function is called by:
+		_SeatManager_AutoSlide
+		_SeatManager_SetSlide
+ This function uses a non-reentrant model
+
+
+ *************** function _SlideMotor_Move *****************
+ Defined at:
+		line 25 in file "app/sensors_actuators/SlideMotor.c"
+ Parameters:    Size  Location     Type
+  Step            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  Step            1    7[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       1       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_Rte_Call_SlideMotor_rpIOSetSlide_IOSetForward
+		_Rte_Call_SlideMotor_rpIOSetSlide_IOSetReverse
+ This function is called by:
+		_Rte_Call_SeatManager_rpSlideMotor_Move
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Call_SlideMotor_rpIOSetSlide_IOSetReverse *****************
+ Defined at:
+		line 208 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_IoHwAbs_ECUSetReverse_Slide
+ This function is called by:
+		_SlideMotor_Move
+ This function uses a non-reentrant model
+
+
+ *************** function _IoHwAbs_ECUSetReverse_Slide *****************
+ Defined at:
+		line 239 in file "app/sensors_actuators/IoHwAbs.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_Dio_WriteChannel
+ This function is called by:
+		_Rte_Call_SlideMotor_rpIOSetSlide_IOSetReverse
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Call_SlideMotor_rpIOSetSlide_IOSetForward *****************
+ Defined at:
+		line 202 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_IoHwAbs_ECUSetForward_Slide
+ This function is called by:
+		_SlideMotor_Move
+ This function uses a non-reentrant model
+
+
+ *************** function _IoHwAbs_ECUSetForward_Slide *****************
+ Defined at:
+		line 191 in file "app/sensors_actuators/IoHwAbs.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_Dio_WriteChannel
+ This function is called by:
+		_Rte_Call_SlideMotor_rpIOSetSlide_IOSetForward
+ This function uses a non-reentrant model
+
+
+ *************** function _SeatManager_AutoIncline *****************
+ Defined at:
+		line 217 in file "app/appswcs/SeatManager.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  Step            1   22[BANK0 ] unsigned char 
+  Position        1   21[BANK0 ] unsigned char 
+  Weight          1   20[BANK0 ] unsigned char 
+  adjustMotor     1   19[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       4       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       4       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_IsMotorAdjustNeeded
+		_Rte_Call_SeatManager_rpInclineMotor_Move
+		_Rte_Call_SeatManager_rpInclineSensor_GetPosition
+		_Rte_Call_SeatManager_rpWeightSensor_GetWeight
+ This function is called by:
+		_CyclicTask
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Call_SeatManager_rpInclineSensor_GetPosition *****************
+ Defined at:
+		line 262 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+  Position        1    wreg     PTR unsigned char 
+		 -> SeatManager_AutoIncline@Position(1), 
+ Auto vars:     Size  Location     Type
+  Position        1   18[BANK0 ] PTR unsigned char 
+		 -> SeatManager_AutoIncline@Position(1), 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       1       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_InclineSensor_GetPosition
+ This function is called by:
+		_SeatManager_AutoIncline
+ This function uses a non-reentrant model
+
+
+ *************** function _InclineSensor_GetPosition *****************
+ Defined at:
+		line 25 in file "app/sensors_actuators/InclineSensor.c"
+ Parameters:    Size  Location     Type
+  Position        1    wreg     PTR unsigned char 
+		 -> SeatManager_AutoIncline@Position(1), 
+ Auto vars:     Size  Location     Type
+  Position        1   16[BANK0 ] PTR unsigned char 
+		 -> SeatManager_AutoIncline@Position(1), 
+  position        1   17[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       2       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       2       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_Rte_Call_InclineSensor_rpIOGetIncline_IOGet
+ This function is called by:
+		_Rte_Call_SeatManager_rpInclineSensor_GetPosition
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Call_InclineSensor_rpIOGetIncline_IOGet *****************
+ Defined at:
+		line 220 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+  position        1    wreg     PTR unsigned char 
+		 -> InclineSensor_GetPosition@position(1), 
+ Auto vars:     Size  Location     Type
+  position        1   15[BANK0 ] PTR unsigned char 
+		 -> InclineSensor_GetPosition@position(1), 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       1       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_IoHwAbs_ECUGet_Incline
+ This function is called by:
+		_InclineSensor_GetPosition
+ This function uses a non-reentrant model
+
+
+ *************** function _IoHwAbs_ECUGet_Incline *****************
+ Defined at:
+		line 74 in file "app/sensors_actuators/IoHwAbs.c"
+ Parameters:    Size  Location     Type
+  position        1    wreg     PTR unsigned char 
+		 -> InclineSensor_GetPosition@position(1), 
+ Auto vars:     Size  Location     Type
+  position        1   14[BANK0 ] PTR unsigned char 
+		 -> InclineSensor_GetPosition@position(1), 
+  status          1   13[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       2       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       2       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_Adc_ReadGroup
+ This function is called by:
+		_Rte_Call_InclineSensor_rpIOGetIncline_IOGet
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Call_SeatManager_rpInclineMotor_Move *****************
+ Defined at:
+		line 244 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+  Step            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  Step            1    8[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       1       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_InclineMotor_Move
+ This function is called by:
+		_SeatManager_AutoIncline
+		_SeatManager_SetIncline
+ This function uses a non-reentrant model
+
+
+ *************** function _InclineMotor_Move *****************
+ Defined at:
+		line 25 in file "app/sensors_actuators/InclineMotor.c"
+ Parameters:    Size  Location     Type
+  Step            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  Step            1    7[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       1       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_Rte_Call_InclineMotor_rpIOSetIncline_IOSetForward
+		_Rte_Call_InclineMotor_rpIOSetIncline_IOSetReverse
+ This function is called by:
+		_Rte_Call_SeatManager_rpInclineMotor_Move
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Call_InclineMotor_rpIOSetIncline_IOSetReverse *****************
+ Defined at:
+		line 196 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_IoHwAbs_ECUSetReverse_Incline
+ This function is called by:
+		_InclineMotor_Move
+ This function uses a non-reentrant model
+
+
+ *************** function _IoHwAbs_ECUSetReverse_Incline *****************
+ Defined at:
+		line 223 in file "app/sensors_actuators/IoHwAbs.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_Dio_WriteChannel
+ This function is called by:
+		_Rte_Call_InclineMotor_rpIOSetIncline_IOSetReverse
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Call_InclineMotor_rpIOSetIncline_IOSetForward *****************
+ Defined at:
+		line 190 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_IoHwAbs_ECUSetForward_Incline
+ This function is called by:
+		_InclineMotor_Move
+ This function uses a non-reentrant model
+
+
+ *************** function _IoHwAbs_ECUSetForward_Incline *****************
+ Defined at:
+		line 175 in file "app/sensors_actuators/IoHwAbs.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_Dio_WriteChannel
+ This function is called by:
+		_Rte_Call_InclineMotor_rpIOSetIncline_IOSetForward
+ This function uses a non-reentrant model
+
+
+ *************** function _SeatManager_AutoHeight *****************
+ Defined at:
+		line 164 in file "app/appswcs/SeatManager.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  Step            1   22[BANK0 ] unsigned char 
+  Position        1   21[BANK0 ] unsigned char 
+  Weight          1   20[BANK0 ] unsigned char 
+  adjustMotor     1   19[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       4       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       4       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_IsMotorAdjustNeeded
+		_Rte_Call_SeatManager_rpHeightMotor_Move
+		_Rte_Call_SeatManager_rpHeightSensor_GetPosition
+		_Rte_Call_SeatManager_rpWeightSensor_GetWeight
+ This function is called by:
+		_CyclicTask
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Call_SeatManager_rpWeightSensor_GetWeight *****************
+ Defined at:
+		line 274 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+  Weight          1    wreg     PTR unsigned char 
+		 -> SeatManager_AutoIncline@Weight(1), SeatManager_AutoSlide@Weight(1), SeatManager_AutoHeight@Weight(1), 
+ Auto vars:     Size  Location     Type
+  Weight          1   11[BANK0 ] PTR unsigned char 
+		 -> SeatManager_AutoIncline@Weight(1), SeatManager_AutoSlide@Weight(1), SeatManager_AutoHeight@Weight(1), 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       1       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_WeightSensor_GetWeight
+ This function is called by:
+		_SeatManager_AutoHeight
+		_SeatManager_AutoSlide
+		_SeatManager_AutoIncline
+ This function uses a non-reentrant model
+
+
+ *************** function _WeightSensor_GetWeight *****************
+ Defined at:
+		line 25 in file "app/sensors_actuators/WeightSensor.c"
+ Parameters:    Size  Location     Type
+  Weight          1    wreg     PTR unsigned char 
+		 -> SeatManager_AutoIncline@Weight(1), SeatManager_AutoSlide@Weight(1), SeatManager_AutoHeight@Weight(1), 
+ Auto vars:     Size  Location     Type
+  Weight          1    8[BANK0 ] PTR unsigned char 
+		 -> SeatManager_AutoIncline@Weight(1), SeatManager_AutoSlide@Weight(1), SeatManager_AutoHeight@Weight(1), 
+  weight          2    9[BANK0 ] unsigned short 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       3       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       3       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_Rte_Call_WeightSensor_rpIOGetWeight_IOGet
+		___lwdiv
+ This function is called by:
+		_Rte_Call_SeatManager_rpWeightSensor_GetWeight
+ This function uses a non-reentrant model
+
+
+ *************** function ___lwdiv *****************
+ Defined at:
+		line 5 in file "C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c"
+ Parameters:    Size  Location     Type
+  divisor         2    0[BANK0 ] unsigned int 
+  dividend        2    2[BANK0 ] unsigned int 
+ Auto vars:     Size  Location     Type
+  quotient        2    4[BANK0 ] unsigned int 
+  counter         1    6[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  2    0[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, btemp+1
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       4       0       0       0
+      Locals:         0       3       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       7       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_WeightSensor_GetWeight
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Call_WeightSensor_rpIOGetWeight_IOGet *****************
+ Defined at:
+		line 232 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+  weight          1    wreg     PTR unsigned short 
+		 -> WeightSensor_GetWeight@weight(2), 
+ Auto vars:     Size  Location     Type
+  weight          1    7[BANK0 ] PTR unsigned short 
+		 -> WeightSensor_GetWeight@weight(2), 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       1       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_IoHwAbs_ECUGet_Weight
+ This function is called by:
+		_WeightSensor_GetWeight
+ This function uses a non-reentrant model
+
+
+ *************** function _IoHwAbs_ECUGet_Weight *****************
+ Defined at:
+		line 130 in file "app/sensors_actuators/IoHwAbs.c"
+ Parameters:    Size  Location     Type
+  weight          1    wreg     PTR unsigned short 
+		 -> WeightSensor_GetWeight@weight(2), 
+ Auto vars:     Size  Location     Type
+  weight          1    4[BANK0 ] PTR unsigned short 
+		 -> WeightSensor_GetWeight@weight(2), 
+  spiData         2    5[BANK0 ] unsigned int 
+  status          1    3[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       4       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       4       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_Spi_ReadIB
+ This function is called by:
+		_Rte_Call_WeightSensor_rpIOGetWeight_IOGet
+ This function uses a non-reentrant model
+
+
+ *************** function _Spi_ReadIB *****************
+ Defined at:
+		line 122 in file "bsw/static/Spi.c"
+ Parameters:    Size  Location     Type
+  Channel         1    wreg     unsigned char 
+  DataBufferPt    1    0[BANK0 ] PTR unsigned int 
+		 -> IoHwAbs_ECUGet_Weight@spiData(2), 
+ Auto vars:     Size  Location     Type
+  Channel         1    0[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       1       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       2       0       0       0
+      Totals:         0       3       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_SPI_Master_Wait
+ This function is called by:
+		_IoHwAbs_ECUGet_Weight
+ This function uses a non-reentrant model
+
+
+ *************** function _SPI_Master_Wait *****************
+ Defined at:
+		line 159 in file "bsw/static/Spi.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_Spi_ReadIB
+		_Spi_WriteSlaveAddress
+		_Spi_WriteIB
+		_SPI_Master_Start
+		_SPI_Master_RepeatedStart
+		_SPI_Master_Stop
+		_SPI_ACK
+		_SPI_NACK
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Call_SeatManager_rpHeightSensor_GetPosition *****************
+ Defined at:
+		line 256 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+  Position        1    wreg     PTR unsigned char 
+		 -> SeatManager_AutoHeight@Position(1), 
+ Auto vars:     Size  Location     Type
+  Position        1   18[BANK0 ] PTR unsigned char 
+		 -> SeatManager_AutoHeight@Position(1), 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       1       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_HeightSensor_GetPosition
+ This function is called by:
+		_SeatManager_AutoHeight
+ This function uses a non-reentrant model
+
+
+ *************** function _HeightSensor_GetPosition *****************
+ Defined at:
+		line 25 in file "app/sensors_actuators/HeightSensor.c"
+ Parameters:    Size  Location     Type
+  Position        1    wreg     PTR unsigned char 
+		 -> SeatManager_AutoHeight@Position(1), 
+ Auto vars:     Size  Location     Type
+  Position        1   16[BANK0 ] PTR unsigned char 
+		 -> SeatManager_AutoHeight@Position(1), 
+  position        1   17[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       2       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       2       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_Rte_Call_HeightSensor_rpIOGetHeight_IOGet
+ This function is called by:
+		_Rte_Call_SeatManager_rpHeightSensor_GetPosition
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Call_HeightSensor_rpIOGetHeight_IOGet *****************
+ Defined at:
+		line 214 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+  position        1    wreg     PTR unsigned char 
+		 -> HeightSensor_GetPosition@position(1), 
+ Auto vars:     Size  Location     Type
+  position        1   15[BANK0 ] PTR unsigned char 
+		 -> HeightSensor_GetPosition@position(1), 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       1       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_IoHwAbs_ECUGet_Height
+ This function is called by:
+		_HeightSensor_GetPosition
+ This function uses a non-reentrant model
+
+
+ *************** function _IoHwAbs_ECUGet_Height *****************
+ Defined at:
+		line 46 in file "app/sensors_actuators/IoHwAbs.c"
+ Parameters:    Size  Location     Type
+  position        1    wreg     PTR unsigned char 
+		 -> HeightSensor_GetPosition@position(1), 
+ Auto vars:     Size  Location     Type
+  position        1   14[BANK0 ] PTR unsigned char 
+		 -> HeightSensor_GetPosition@position(1), 
+  status          1   13[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       2       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       2       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_Adc_ReadGroup
+ This function is called by:
+		_Rte_Call_HeightSensor_rpIOGetHeight_IOGet
+ This function uses a non-reentrant model
+
+
+ *************** function _Adc_ReadGroup *****************
+ Defined at:
+		line 96 in file "bsw/static/Adc.c"
+ Parameters:    Size  Location     Type
+  Group           1    wreg     unsigned char 
+  DataBufferPt    1    8[BANK0 ] PTR unsigned char 
+		 -> IoHwAb_PositionSensorsReadings(3), 
+ Auto vars:     Size  Location     Type
+  Group           1    0[COMMON] unsigned char 
+  i               1   11[BANK0 ] unsigned char 
+  i               1   12[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       1       0       0       0
+      Locals:         0       2       0       0       0
+      Temps:          0       2       0       0       0
+      Totals:         0       5       0       0       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_Adc_StartGroupConversion
+		___awdiv
+ This function is called by:
+		_IoHwAbs_ECUGet_Height
+		_IoHwAbs_ECUGet_Incline
+		_IoHwAbs_ECUGet_Slide
+ This function uses a non-reentrant model
+
+
+ *************** function ___awdiv *****************
+ Defined at:
+		line 5 in file "C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c"
+ Parameters:    Size  Location     Type
+  divisor         2    0[BANK0 ] int 
+  dividend        2    2[BANK0 ] int 
+ Auto vars:     Size  Location     Type
+  quotient        2    6[BANK0 ] int 
+  sign            1    5[BANK0 ] unsigned char 
+  counter         1    4[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  2    0[BANK0 ] int 
+ Registers used:
+		wreg, status,2, status,0, btemp+1
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       4       0       0       0
+      Locals:         0       4       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       8       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_Adc_ReadGroup
+ This function uses a non-reentrant model
+
+
+ *************** function _Adc_StartGroupConversion *****************
+ Defined at:
+		line 152 in file "bsw/static/Adc.c"
+ Parameters:    Size  Location     Type
+  groupId         1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  groupId         1    0[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_Adc_ReadGroup
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Call_SeatManager_rpHeightMotor_Move *****************
+ Defined at:
+		line 238 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+  Step            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  Step            1    8[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       1       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_HeightMotor_Move
+ This function is called by:
+		_SeatManager_AutoHeight
+		_SeatManager_SetHeight
+ This function uses a non-reentrant model
+
+
+ *************** function _HeightMotor_Move *****************
+ Defined at:
+		line 25 in file "app/sensors_actuators/HeightMotor.c"
+ Parameters:    Size  Location     Type
+  Step            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  Step            1    7[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       1       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_Rte_Call_HeightMotor_rpIOSetHeight_IOSetForward
+		_Rte_Call_HeightMotor_rpIOSetHeight_IOSetReverse
+ This function is called by:
+		_Rte_Call_SeatManager_rpHeightMotor_Move
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Call_HeightMotor_rpIOSetHeight_IOSetReverse *****************
+ Defined at:
+		line 184 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_IoHwAbs_ECUSetReverse_Height
+ This function is called by:
+		_HeightMotor_Move
+ This function uses a non-reentrant model
+
+
+ *************** function _IoHwAbs_ECUSetReverse_Height *****************
+ Defined at:
+		line 207 in file "app/sensors_actuators/IoHwAbs.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_Dio_WriteChannel
+ This function is called by:
+		_Rte_Call_HeightMotor_rpIOSetHeight_IOSetReverse
+ This function uses a non-reentrant model
+
+
+ *************** function _Rte_Call_HeightMotor_rpIOSetHeight_IOSetForward *****************
+ Defined at:
+		line 178 in file "rte/Rte.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_IoHwAbs_ECUSetForward_Height
+ This function is called by:
+		_HeightMotor_Move
+ This function uses a non-reentrant model
+
+
+ *************** function _IoHwAbs_ECUSetForward_Height *****************
+ Defined at:
+		line 159 in file "app/sensors_actuators/IoHwAbs.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_Dio_WriteChannel
+ This function is called by:
+		_Rte_Call_HeightMotor_rpIOSetHeight_IOSetForward
+ This function uses a non-reentrant model
+
+
+ *************** function _Dio_WriteChannel *****************
+ Defined at:
+		line 31 in file "bsw/static/Dio.c"
+ Parameters:    Size  Location     Type
+  ChannelId       1    wreg     unsigned char 
+  Level           1    0[BANK0 ] enum E945
+ Auto vars:     Size  Location     Type
+  ChannelId       1    6[BANK0 ] unsigned char 
+  Port_Ptr        2    4[BANK0 ] PTR volatile unsigned ch
+		 -> RAM(512), NULL(0), 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       1       0       0       0
+      Locals:         0       3       0       0       0
+      Temps:          0       3       0       0       0
+      Totals:         0       7       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_IoHwAbs_ECUSetForward_Height
+		_IoHwAbs_ECUSetForward_Incline
+		_IoHwAbs_ECUSetForward_Slide
+		_IoHwAbs_ECUSetReverse_Height
+		_IoHwAbs_ECUSetReverse_Incline
+		_IoHwAbs_ECUSetReverse_Slide
+ This function uses a non-reentrant model
+
+
+ *************** function _IsMotorAdjustNeeded *****************
+ Defined at:
+		line 15 in file "app/appswcs/SeatManager.c"
+ Parameters:    Size  Location     Type
+  Position        1    wreg     unsigned char 
+  Weight          1    0[BANK0 ] unsigned char 
+  Step            1    1[BANK0 ] PTR unsigned char 
+		 -> SeatManager_AutoIncline@Step(1), SeatManager_AutoSlide@Step(1), SeatManager_AutoHeight@Step(1), 
+ Auto vars:     Size  Location     Type
+  Position        1    4[BANK0 ] unsigned char 
+  adjustMotor     1    5[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       2       0       0       0
+      Locals:         0       2       0       0       0
+      Temps:          0       2       0       0       0
+      Totals:         0       6       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_SeatManager_AutoHeight
+		_SeatManager_AutoSlide
+		_SeatManager_AutoIncline
+ This function uses a non-reentrant model
+
+
+ *************** function _Os_TerminateTask *****************
+ Defined at:
+		line 39 in file "bsw/static/Os.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_CyclicTask
+		_AppTsk
+ This function uses a non-reentrant model
+
+
+ *************** function _ISR *****************
+ Defined at:
+		line 29 in file "bsw/static/interrupt.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          4       0       0       0       0
+      Totals:         4       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_Adc_CallbackFn
+		_Uart_RX_Callback
+		_Uart_TX_Callback
+ This function is called by:
+		Interrupt level 1
+ This function uses a non-reentrant model
+
+
+ *************** function _Uart_RX_Callback *****************
+ Defined at:
+		line 36 in file "bsw/static/Uart_CDD.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, btemp+1
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_Uart_Init
+		_ISR
+ This function uses a non-reentrant model
+
+
+ *************** function _Adc_CallbackFn *****************
+ Defined at:
+		line 39 in file "bsw/static/Adc.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          2       0       0       0       0
+      Totals:         2       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		i1___awdiv
+ This function is called by:
+		_Adc_Init
+		_Adc_EnableGroupNotification
+		_ISR
+ This function uses a non-reentrant model
+
+
+ *************** function _Uart_TX_Callback *****************
+ Defined at:
+		line 35 in file "bsw/static/Uart_CDD.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_Uart_Init
+		_ISR
+ This function uses a non-reentrant model
+
+
+ *************** function i1___awdiv *****************
+ Defined at:
+		line 5 in file "C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c"
+ Parameters:    Size  Location     Type
+  divisor         2    0[COMMON] int 
+  dividend        2    2[COMMON] int 
+ Auto vars:     Size  Location     Type
+  quotient        2    6[COMMON] int 
+  sign            1    5[COMMON] unsigned char 
+  counter         1    4[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  2    0[COMMON] int 
+ Registers used:
+		wreg, status,2, status,0, btemp+1
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         4       0       0       0       0
+      Locals:         4       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         8       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_Adc_CallbackFn
+ This function uses a non-reentrant model
+
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+bsw/static/Adc.c
+		_Adc_ReadGroup 		CODE           	004C	0000	228
+		_Adc_StartGroupConversion		CODE           	06F6	0000	25
+		_Adc_CallbackFn		CODE           	04A7	0000	58
+
+bsw/static/Adc.c estimated size: 311
+
+app/sensors_actuators/SlideSensor.c
+		_SlideSensor_GetPosition		CODE           	03DB	0000	69
+
+app/sensors_actuators/SlideSensor.c estimated size: 69
+
+bsw/static/Uart_CDD.c
+		_Uart_RX_Callback		CODE           	0733	0000	16
+		_Uart_TX_Callback		CODE           	07FD	0000	2
+
+bsw/static/Uart_CDD.c estimated size: 18
+
+bsw/static/Spi.c
+		_SPI_Master_Wait		CODE           	0742	0000	14
+		_Spi_ReadIB    		CODE           	060C	0000	35
+
+bsw/static/Spi.c estimated size: 49
+
+rte/Rte.c
+		_Rte_Call_WeightSensor_rpIOGetWeight_IOGet		CODE           	07CA	0000	11
+		_Rte_Call_SlideMotor_rpIOSetSlide_IOSetForward		CODE           	0FDB	0000	7
+		_Rte_Call_HeightMotor_rpIOSetHeight_IOSetForward		CODE           	0FC3	0000	7
+		_Rte_Call_HeightMotor_rpIOSetHeight_IOSetReverse		CODE           	0FC9	0000	7
+		_Rte_Call_SlideMotor_rpIOSetSlide_IOSetReverse		CODE           	0FE1	0000	7
+		_Rte_Call_InclineSensor_rpIOGetIncline_IOGet		CODE           	07A2	0000	11
+		_Rte_Call_SeatManager_rpHeightSensor_GetPosition		CODE           	07D4	0000	11
+		_Rte_Call_SeatManager_rpSlideMotor_Move		CODE           	0784	0000	11
+		_Rte_Call_SeatManager_rpInclineMotor_Move		CODE           	07AC	0000	11
+		_Rte_Call_InclineMotor_rpIOSetIncline_IOSetForward		CODE           	0FCF	0000	7
+		_Rte_Call_InclineMotor_rpIOSetIncline_IOSetReverse		CODE           	0FD5	0000	7
+		_CyclicTask    		CODE           	0396	0000	70
+		_Rte_Call_SeatManager_rpSlideSensor_GetPosition		CODE           	0770	0000	11
+		_Rte_Start     		CODE           	05C8	0000	35
+		_Rte_Call_SlideSensor_rpIOGetSlide_IOGet		CODE           	077A	0000	11
+		_Rte_Call_SeatManager_rpHeightMotor_Move		CODE           	07E8	0000	11
+		_Rte_Call_SeatManager_rpInclineSensor_GetPosition		CODE           	0798	0000	11
+		_Rte_Call_SeatManager_rpWeightSensor_GetWeight		CODE           	07C0	0000	11
+		_Rte_Call_HeightSensor_rpIOGetHeight_IOGet		CODE           	07DE	0000	11
+
+rte/Rte.c estimated size: 268
+
+app/sensors_actuators/InclineSensor.c
+		_InclineSensor_GetPosition		CODE           	041F	0000	69
+
+app/sensors_actuators/InclineSensor.c estimated size: 69
+
+app/sensors_actuators/SlideMotor.c
+		_SlideMotor_Move		CODE           	06AB	0000	26
+
+app/sensors_actuators/SlideMotor.c estimated size: 26
+
+shared
+		__stringtab    		STRING         	025E	0000	17
+		__i1fptable    		ENTRY          	003D	0000	16
+		i1___awdiv     		CODE           	0198	0000	104
+		__initialization		CODE           	0015	0000	36
+
+shared estimated size: 173
+
+app/sensors_actuators/IoHwAbs.c
+		_IoHwAbs_ECUSetReverse_Slide		CODE           	078E	0000	11
+		_IoHwAbs_ECUGet_Incline		CODE           	066D	0000	32
+		_IoHwAbs_ECUGet_Height		CODE           	068C	0000	32
+		_IoHwAbs_ECUGet_Weight		CODE           	062E	0000	33
+		_IoHwAbs_ECUSetReverse_Incline		CODE           	07B6	0000	11
+		_IoHwAbs_ECUSetForward_Slide		CODE           	074F	0000	12
+		_IoHwAbs_ECUSetReverse_Height		CODE           	07F2	0000	11
+		_IoHwAbs_ECUSetForward_Incline		CODE           	075A	0000	12
+		_IoHwAbs_ECUSetForward_Height		CODE           	0765	0000	12
+		_IoHwAbs_ECUGet_Slide		CODE           	064E	0000	32
+
+app/sensors_actuators/IoHwAbs.c estimated size: 198
+
+app/sensors_actuators/InclineMotor.c
+		_InclineMotor_Move		CODE           	06C4	0000	26
+
+app/sensors_actuators/InclineMotor.c estimated size: 26
+
+bsw/static/Os.c
+		_delay         		CODE           	059E	0000	43
+		_Os_TerminateTask		CODE           	07FC	0000	2
+		_Os_SetRelAlarm		CODE           	0721	0000	19
+
+bsw/static/Os.c estimated size: 64
+
+C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+		___lwdiv       		CODE           	0350	0000	71
+
+C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c estimated size: 71
+
+bsw/static/interrupt.c
+		_ISR           		CODE           	0306	0000	75
+
+bsw/static/interrupt.c estimated size: 75
+
+app/appswcs/SeatManager.c
+		_IsMotorAdjustNeeded		CODE           	01FF	0000	96
+		_SeatManager_AutoSlide		CODE           	0517	0000	46
+		_SeatManager_AutoIncline		CODE           	0544	0000	46
+		_SeatManager_AutoHeight		CODE           	0571	0000	46
+
+app/appswcs/SeatManager.c estimated size: 234
+
+app/sensors_actuators/HeightMotor.c
+		_HeightMotor_Move		CODE           	06DD	0000	26
+
+app/sensors_actuators/HeightMotor.c estimated size: 26
+
+app/sensors_actuators/WeightSensor.c
+		_WeightSensor_GetWeight		CODE           	05EA	0000	35
+
+app/sensors_actuators/WeightSensor.c estimated size: 35
+
+app/sensors_actuators/HeightSensor.c
+		_HeightSensor_GetPosition		CODE           	0463	0000	69
+
+app/sensors_actuators/HeightSensor.c estimated size: 69
+
+main.c
+		_main          		CODE           	0FE7	0000	9
+
+main.c estimated size: 9
+
+C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+		___awdiv       		CODE           	012F	0000	106
+
+C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c estimated size: 106
+
+bsw/static/Dio.c
+		_Dio_WriteChannel		CODE           	02B7	0000	80
+
+bsw/static/Dio.c estimated size: 80
+

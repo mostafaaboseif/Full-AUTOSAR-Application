@@ -1,0 +1,62 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"16 app/sensors_actuators/../../rte/Rte_HeightMotor.h
+[; ;app/sensors_actuators/../../rte/Rte_HeightMotor.h: 16: Std_ReturnType Rte_Call_HeightMotor_rpIOSetHeight_IOSetForward();
+[v _Rte_Call_HeightMotor_rpIOSetHeight_IOSetForward `(uc ~T0 @X0 0 e? ]
+"17
+[; ;app/sensors_actuators/../../rte/Rte_HeightMotor.h: 17: Std_ReturnType Rte_Call_HeightMotor_rpIOSetHeight_IOSetReverse();
+[v _Rte_Call_HeightMotor_rpIOSetHeight_IOSetReverse `(uc ~T0 @X0 0 e? ]
+"25 app/sensors_actuators/HeightMotor.c
+[; ;app/sensors_actuators/HeightMotor.c: 25: void HeightMotor_Move (StepMotorStepType Step)
+[v _HeightMotor_Move `(v ~T0 @X0 1 ef1`uc ]
+"26
+[; ;app/sensors_actuators/HeightMotor.c: 26: {
+{
+[e :U _HeightMotor_Move ]
+"25
+[; ;app/sensors_actuators/HeightMotor.c: 25: void HeightMotor_Move (StepMotorStepType Step)
+[v _Step `uc ~T0 @X0 1 r1 ]
+"26
+[; ;app/sensors_actuators/HeightMotor.c: 26: {
+[f ]
+"27
+[; ;app/sensors_actuators/HeightMotor.c: 27:  if(Step == 0)
+[e $ ! == -> _Step `i -> 0 `i 2  ]
+"28
+[; ;app/sensors_actuators/HeightMotor.c: 28:  {
+{
+"29
+[; ;app/sensors_actuators/HeightMotor.c: 29:   (void)Rte_Call_HeightMotor_rpIOSetHeight_IOSetForward();
+[e ( _Rte_Call_HeightMotor_rpIOSetHeight_IOSetForward ..  ]
+"30
+[; ;app/sensors_actuators/HeightMotor.c: 30:  }
+}
+[e $U 3  ]
+"31
+[; ;app/sensors_actuators/HeightMotor.c: 31:  else if(Step == 1)
+[e :U 2 ]
+[e $ ! == -> _Step `i -> 1 `i 4  ]
+"32
+[; ;app/sensors_actuators/HeightMotor.c: 32:  {
+{
+"33
+[; ;app/sensors_actuators/HeightMotor.c: 33:   (void)Rte_Call_HeightMotor_rpIOSetHeight_IOSetReverse();
+[e ( _Rte_Call_HeightMotor_rpIOSetHeight_IOSetReverse ..  ]
+"34
+[; ;app/sensors_actuators/HeightMotor.c: 34:  }
+}
+[e $U 5  ]
+"35
+[; ;app/sensors_actuators/HeightMotor.c: 35:  else
+[e :U 4 ]
+"36
+[; ;app/sensors_actuators/HeightMotor.c: 36:  {
+{
+"38
+[; ;app/sensors_actuators/HeightMotor.c: 38:  }
+}
+[e :U 5 ]
+[e :U 3 ]
+"39
+[; ;app/sensors_actuators/HeightMotor.c: 39: }
+[e :UE 1 ]
+}

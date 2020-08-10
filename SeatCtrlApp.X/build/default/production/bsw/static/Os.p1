@@ -1,0 +1,321 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"23 bsw/static/../cfg/Os_Cfg.h
+[; ;bsw/static/../cfg/Os_Cfg.h: 23: void CyclicTask(void);
+[v _CyclicTask `(v ~T0 @X0 0 ef ]
+"24
+[; ;bsw/static/../cfg/Os_Cfg.h: 24: void AppTsk(void);
+[v _AppTsk `(v ~T0 @X0 0 ef ]
+"13 bsw/static/Os.c
+[; ;bsw/static/Os.c: 13: static void delay(int milli_seconds)
+[v _delay `(v ~T0 @X0 1 sf1`i ]
+"14
+[; ;bsw/static/Os.c: 14: {
+{
+[e :U _delay ]
+"13
+[; ;bsw/static/Os.c: 13: static void delay(int milli_seconds)
+[v _milli_seconds `i ~T0 @X0 1 r1 ]
+"14
+[; ;bsw/static/Os.c: 14: {
+[f ]
+"15
+[; ;bsw/static/Os.c: 15:  time_t start_time = (-1L);
+[v _start_time `l ~T0 @X0 1 a ]
+[e = _start_time -U -> 1 `l ]
+"17
+[; ;bsw/static/Os.c: 17:  while ((-1L) < start_time + milli_seconds);
+[e $U 3  ]
+[e :U 4 ]
+[e :U 3 ]
+[e $ < -U -> 1 `l + _start_time -> _milli_seconds `l 4  ]
+[e :U 5 ]
+"18
+[; ;bsw/static/Os.c: 18: }
+[e :UE 2 ]
+}
+"20
+[; ;bsw/static/Os.c: 20: static EventMaskType AppTsk_CurrentEvents = 0;
+[v _AppTsk_CurrentEvents `ul ~T0 @X0 1 s ]
+[i _AppTsk_CurrentEvents
+-> -> -> 0 `i `l `ul
+]
+"22
+[; ;bsw/static/Os.c: 22: void Os_ActivateTask(TaskType taskId)
+[v _Os_ActivateTask `(v ~T0 @X0 1 ef1`uc ]
+"23
+[; ;bsw/static/Os.c: 23: {
+{
+[e :U _Os_ActivateTask ]
+"22
+[; ;bsw/static/Os.c: 22: void Os_ActivateTask(TaskType taskId)
+[v _taskId `uc ~T0 @X0 1 r1 ]
+"23
+[; ;bsw/static/Os.c: 23: {
+[f ]
+"24
+[; ;bsw/static/Os.c: 24:  switch(taskId)
+[e $U 8  ]
+"25
+[; ;bsw/static/Os.c: 25:  {
+{
+"26
+[; ;bsw/static/Os.c: 26:   case 0U:
+[e :U 9 ]
+"27
+[; ;bsw/static/Os.c: 27:    CyclicTask();
+[e ( _CyclicTask ..  ]
+"28
+[; ;bsw/static/Os.c: 28:    break;
+[e $U 7  ]
+"30
+[; ;bsw/static/Os.c: 30:   case 1U:
+[e :U 10 ]
+"31
+[; ;bsw/static/Os.c: 31:    AppTsk();
+[e ( _AppTsk ..  ]
+"32
+[; ;bsw/static/Os.c: 32:    break;
+[e $U 7  ]
+"34
+[; ;bsw/static/Os.c: 34:   default:
+[e :U 11 ]
+"35
+[; ;bsw/static/Os.c: 35:    break;
+[e $U 7  ]
+"36
+[; ;bsw/static/Os.c: 36:  }
+}
+[e $U 7  ]
+[e :U 8 ]
+[e [\ -> _taskId `i , $ -> -> 0 `ui `i 9
+ , $ -> -> 1 `ui `i 10
+ 11 ]
+[e :U 7 ]
+"37
+[; ;bsw/static/Os.c: 37: }
+[e :UE 6 ]
+}
+"39
+[; ;bsw/static/Os.c: 39: void Os_TerminateTask()
+[v _Os_TerminateTask `(v ~T0 @X0 1 ef ]
+"40
+[; ;bsw/static/Os.c: 40: {
+{
+[e :U _Os_TerminateTask ]
+[f ]
+"41
+[; ;bsw/static/Os.c: 41: }
+[e :UE 12 ]
+}
+"43
+[; ;bsw/static/Os.c: 43: void Os_SetRelAlarm(AlarmType alarmID, TickType offset, TickType cycle)
+[v _Os_SetRelAlarm `(v ~T0 @X0 1 ef3`uc`ul`ul ]
+"44
+[; ;bsw/static/Os.c: 44: {
+{
+[e :U _Os_SetRelAlarm ]
+"43
+[; ;bsw/static/Os.c: 43: void Os_SetRelAlarm(AlarmType alarmID, TickType offset, TickType cycle)
+[v _alarmID `uc ~T0 @X0 1 r1 ]
+[v _offset `ul ~T0 @X0 1 r2 ]
+[v _cycle `ul ~T0 @X0 1 r3 ]
+"44
+[; ;bsw/static/Os.c: 44: {
+[f ]
+"45
+[; ;bsw/static/Os.c: 45:  while (1)
+[e :U 15 ]
+"46
+[; ;bsw/static/Os.c: 46:  {
+{
+"47
+[; ;bsw/static/Os.c: 47:   CyclicTask();
+[e ( _CyclicTask ..  ]
+"48
+[; ;bsw/static/Os.c: 48:   delay(cycle);
+[e ( _delay (1 -> _cycle `i ]
+"49
+[; ;bsw/static/Os.c: 49:  }
+}
+[e :U 14 ]
+[e $U 15  ]
+[e :U 16 ]
+"50
+[; ;bsw/static/Os.c: 50: }
+[e :UE 13 ]
+}
+"52
+[; ;bsw/static/Os.c: 52: void Os_CancelAlarm(AlarmType alarmID)
+[v _Os_CancelAlarm `(v ~T0 @X0 1 ef1`uc ]
+"53
+[; ;bsw/static/Os.c: 53: {
+{
+[e :U _Os_CancelAlarm ]
+"52
+[; ;bsw/static/Os.c: 52: void Os_CancelAlarm(AlarmType alarmID)
+[v _alarmID `uc ~T0 @X0 1 r1 ]
+"53
+[; ;bsw/static/Os.c: 53: {
+[f ]
+"54
+[; ;bsw/static/Os.c: 54: }
+[e :UE 17 ]
+}
+"56
+[; ;bsw/static/Os.c: 56: void Os_SetEvent(TaskType taskId, EventMaskType osEvent)
+[v _Os_SetEvent `(v ~T0 @X0 1 ef2`uc`ul ]
+"57
+[; ;bsw/static/Os.c: 57: {
+{
+[e :U _Os_SetEvent ]
+"56
+[; ;bsw/static/Os.c: 56: void Os_SetEvent(TaskType taskId, EventMaskType osEvent)
+[v _taskId `uc ~T0 @X0 1 r1 ]
+[v _osEvent `ul ~T0 @X0 1 r2 ]
+"57
+[; ;bsw/static/Os.c: 57: {
+[f ]
+"58
+[; ;bsw/static/Os.c: 58:  switch(taskId)
+[e $U 20  ]
+"59
+[; ;bsw/static/Os.c: 59:  {
+{
+"60
+[; ;bsw/static/Os.c: 60:   case 1U:
+[e :U 21 ]
+"61
+[; ;bsw/static/Os.c: 61:    AppTsk_CurrentEvents |= osEvent;
+[e =| _AppTsk_CurrentEvents _osEvent ]
+"62
+[; ;bsw/static/Os.c: 62:    Os_ActivateTask(taskId);
+[e ( _Os_ActivateTask (1 _taskId ]
+"63
+[; ;bsw/static/Os.c: 63:    break;
+[e $U 19  ]
+"65
+[; ;bsw/static/Os.c: 65:   default:
+[e :U 22 ]
+"66
+[; ;bsw/static/Os.c: 66:    break;
+[e $U 19  ]
+"67
+[; ;bsw/static/Os.c: 67:  }
+}
+[e $U 19  ]
+[e :U 20 ]
+[e [\ -> _taskId `i , $ -> -> 1 `ui `i 21
+ 22 ]
+[e :U 19 ]
+"68
+[; ;bsw/static/Os.c: 68: }
+[e :UE 18 ]
+}
+"70
+[; ;bsw/static/Os.c: 70: void Os_ClearEvent(EventMaskType osEvent)
+[v _Os_ClearEvent `(v ~T0 @X0 1 ef1`ul ]
+"71
+[; ;bsw/static/Os.c: 71: {
+{
+[e :U _Os_ClearEvent ]
+"70
+[; ;bsw/static/Os.c: 70: void Os_ClearEvent(EventMaskType osEvent)
+[v _osEvent `ul ~T0 @X0 1 r1 ]
+"71
+[; ;bsw/static/Os.c: 71: {
+[f ]
+"72
+[; ;bsw/static/Os.c: 72:  AppTsk_CurrentEvents &= (~osEvent);
+[e =& _AppTsk_CurrentEvents ~ _osEvent ]
+"73
+[; ;bsw/static/Os.c: 73: }
+[e :UE 23 ]
+}
+"75
+[; ;bsw/static/Os.c: 75: void Os_GetEvent(TaskType taskId, EventMaskType* osEvent)
+[v _Os_GetEvent `(v ~T0 @X0 1 ef2`uc`*ul ]
+"76
+[; ;bsw/static/Os.c: 76: {
+{
+[e :U _Os_GetEvent ]
+"75
+[; ;bsw/static/Os.c: 75: void Os_GetEvent(TaskType taskId, EventMaskType* osEvent)
+[v _taskId `uc ~T0 @X0 1 r1 ]
+[v _osEvent `*ul ~T0 @X0 1 r2 ]
+"76
+[; ;bsw/static/Os.c: 76: {
+[f ]
+"77
+[; ;bsw/static/Os.c: 77:  switch(taskId)
+[e $U 26  ]
+"78
+[; ;bsw/static/Os.c: 78:  {
+{
+"79
+[; ;bsw/static/Os.c: 79:   case 1U:
+[e :U 27 ]
+"80
+[; ;bsw/static/Os.c: 80:    *osEvent = AppTsk_CurrentEvents;
+[e = *U _osEvent _AppTsk_CurrentEvents ]
+"81
+[; ;bsw/static/Os.c: 81:    break;
+[e $U 25  ]
+"83
+[; ;bsw/static/Os.c: 83:   default:
+[e :U 28 ]
+"84
+[; ;bsw/static/Os.c: 84:    break;
+[e $U 25  ]
+"85
+[; ;bsw/static/Os.c: 85:  }
+}
+[e $U 25  ]
+[e :U 26 ]
+[e [\ -> _taskId `i , $ -> -> 1 `ui `i 27
+ 28 ]
+[e :U 25 ]
+"86
+[; ;bsw/static/Os.c: 86: }
+[e :UE 24 ]
+}
+"88
+[; ;bsw/static/Os.c: 88: void Os_WaitEvent(EventMaskType osEvent)
+[v _Os_WaitEvent `(v ~T0 @X0 1 ef1`ul ]
+"89
+[; ;bsw/static/Os.c: 89: {
+{
+[e :U _Os_WaitEvent ]
+"88
+[; ;bsw/static/Os.c: 88: void Os_WaitEvent(EventMaskType osEvent)
+[v _osEvent `ul ~T0 @X0 1 r1 ]
+"89
+[; ;bsw/static/Os.c: 89: {
+[f ]
+"90
+[; ;bsw/static/Os.c: 90: }
+[e :UE 29 ]
+}
+"92
+[; ;bsw/static/Os.c: 92: void Os_SuspendAllInterrupts()
+[v _Os_SuspendAllInterrupts `(v ~T0 @X0 1 ef ]
+"93
+[; ;bsw/static/Os.c: 93: {
+{
+[e :U _Os_SuspendAllInterrupts ]
+[f ]
+"94
+[; ;bsw/static/Os.c: 94: }
+[e :UE 30 ]
+}
+"96
+[; ;bsw/static/Os.c: 96: void Os_ResumeAllInterrupts()
+[v _Os_ResumeAllInterrupts `(v ~T0 @X0 1 ef ]
+"97
+[; ;bsw/static/Os.c: 97: {
+{
+[e :U _Os_ResumeAllInterrupts ]
+[f ]
+"98
+[; ;bsw/static/Os.c: 98: }
+[e :UE 31 ]
+}

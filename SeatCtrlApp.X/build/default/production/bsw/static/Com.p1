@@ -1,0 +1,163 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"35 bsw/static/../../vfb/vfb.h
+[; ;bsw/static/../../vfb/vfb.h: 35: VFB_MultiStateBtnEnum VFB_HeightBtnState;
+[c E64 0 1 2 .. ]
+[n E64 . VFB_BTN_STATE_INIT VFB_BTN_STATE_MINUS VFB_BTN_STATE_PLUS  ]
+"40
+[; ;bsw/static/../../vfb/vfb.h: 40: VFB_AutoStateBtnEnum VFB_AutoBtnState;
+[c E69 0 1 .. ]
+[n E69 . VFB_BTN_STATE_MANUAL VFB_BTN_STATE_AUTO  ]
+"43
+[; ;bsw/static/../../vfb/vfb.h: 43: VFB_MotorStateEnum VFB_HeightMotorState;
+[c E73 0 1 .. ]
+[n E73 . VFB_MOTOR_REVERSE VFB_MOTOR_FORWARD  ]
+"15 bsw/static/../../rte/Rte_Cbk.h
+[; ;bsw/static/../../rte/Rte_Cbk.h: 15: void Rte_ComCbk_HeightBtnSignal(void);
+[v _Rte_ComCbk_HeightBtnSignal `(v ~T0 @X0 0 ef ]
+"17
+[; ;bsw/static/../../rte/Rte_Cbk.h: 17: void Rte_ComCbk_InclineBtnSignal(void);
+[v _Rte_ComCbk_InclineBtnSignal `(v ~T0 @X0 0 ef ]
+"19
+[; ;bsw/static/../../rte/Rte_Cbk.h: 19: void Rte_ComCbk_SlideBtnSignal(void);
+[v _Rte_ComCbk_SlideBtnSignal `(v ~T0 @X0 0 ef ]
+"21
+[; ;bsw/static/../../rte/Rte_Cbk.h: 21: void Rte_ComCbk_AutoBtnSignal(void);
+[v _Rte_ComCbk_AutoBtnSignal `(v ~T0 @X0 0 ef ]
+"35 bsw/static/../../vfb/vfb.h
+[; ;bsw/static/../../vfb/vfb.h: 35: VFB_MultiStateBtnEnum VFB_HeightBtnState;
+[v _VFB_HeightBtnState `E64 ~T0 @X0 1 e ]
+"36
+[; ;bsw/static/../../vfb/vfb.h: 36: VFB_MultiStateBtnEnum VFB_InclineBtnState;
+[v _VFB_InclineBtnState `E64 ~T0 @X0 1 e ]
+"37
+[; ;bsw/static/../../vfb/vfb.h: 37: VFB_MultiStateBtnEnum VFB_SlideBtnState;
+[v _VFB_SlideBtnState `E64 ~T0 @X0 1 e ]
+"40
+[; ;bsw/static/../../vfb/vfb.h: 40: VFB_AutoStateBtnEnum VFB_AutoBtnState;
+[v _VFB_AutoBtnState `E69 ~T0 @X0 1 e ]
+"43
+[; ;bsw/static/../../vfb/vfb.h: 43: VFB_MotorStateEnum VFB_HeightMotorState;
+[v _VFB_HeightMotorState `E73 ~T0 @X0 1 e ]
+"44
+[; ;bsw/static/../../vfb/vfb.h: 44: VFB_MotorStateEnum VFB_InclineMotorState;
+[v _VFB_InclineMotorState `E73 ~T0 @X0 1 e ]
+"45
+[; ;bsw/static/../../vfb/vfb.h: 45: VFB_MotorStateEnum VFB_SlideMotorState;
+[v _VFB_SlideMotorState `E73 ~T0 @X0 1 e ]
+"48
+[; ;bsw/static/../../vfb/vfb.h: 48: uint8 VFB_HeightPosition;
+[v _VFB_HeightPosition `uc ~T0 @X0 1 e ]
+"49
+[; ;bsw/static/../../vfb/vfb.h: 49: uint8 VFB_InclinePosition;
+[v _VFB_InclinePosition `uc ~T0 @X0 1 e ]
+"50
+[; ;bsw/static/../../vfb/vfb.h: 50: uint8 VFB_SlidePosition;
+[v _VFB_SlidePosition `uc ~T0 @X0 1 e ]
+"53
+[; ;bsw/static/../../vfb/vfb.h: 53: uint16 VFB_DriverWeight;
+[v _VFB_DriverWeight `us ~T0 @X0 1 e ]
+"14 bsw/static/Com.c
+[; ;bsw/static/Com.c: 14: void Com_MainFunction(void)
+[v _Com_MainFunction `(v ~T0 @X0 1 ef ]
+"15
+[; ;bsw/static/Com.c: 15: {
+{
+[e :U _Com_MainFunction ]
+[f ]
+"16
+[; ;bsw/static/Com.c: 16:  Rte_ComCbk_HeightBtnSignal();
+[e ( _Rte_ComCbk_HeightBtnSignal ..  ]
+"17
+[; ;bsw/static/Com.c: 17:  Rte_ComCbk_InclineBtnSignal();
+[e ( _Rte_ComCbk_InclineBtnSignal ..  ]
+"18
+[; ;bsw/static/Com.c: 18:  Rte_ComCbk_SlideBtnSignal();
+[e ( _Rte_ComCbk_SlideBtnSignal ..  ]
+"19
+[; ;bsw/static/Com.c: 19:  Rte_ComCbk_AutoBtnSignal();
+[e ( _Rte_ComCbk_AutoBtnSignal ..  ]
+"20
+[; ;bsw/static/Com.c: 20: }
+[e :UE 1 ]
+}
+"22
+[; ;bsw/static/Com.c: 22: Std_ReturnType Com_ReceiveSignal(Com_SignalIdType SignalId, void* SignalDataPtr)
+[v _Com_ReceiveSignal `(uc ~T0 @X0 1 ef2`us`*v ]
+"23
+[; ;bsw/static/Com.c: 23: {
+{
+[e :U _Com_ReceiveSignal ]
+"22
+[; ;bsw/static/Com.c: 22: Std_ReturnType Com_ReceiveSignal(Com_SignalIdType SignalId, void* SignalDataPtr)
+[v _SignalId `us ~T0 @X0 1 r1 ]
+[v _SignalDataPtr `*v ~T0 @X0 1 r2 ]
+"23
+[; ;bsw/static/Com.c: 23: {
+[f ]
+"25
+[; ;bsw/static/Com.c: 25:  switch(SignalId)
+[e $U 4  ]
+"26
+[; ;bsw/static/Com.c: 26:  {
+{
+"27
+[; ;bsw/static/Com.c: 27:   case 0U:
+[e :U 5 ]
+"28
+[; ;bsw/static/Com.c: 28:    *((uint8*)SignalDataPtr) = (uint8)VFB_HeightBtnState;
+[e = *U -> _SignalDataPtr `*uc -> _VFB_HeightBtnState `uc ]
+"29
+[; ;bsw/static/Com.c: 29:    break;
+[e $U 3  ]
+"31
+[; ;bsw/static/Com.c: 31:   case 1U:
+[e :U 6 ]
+"32
+[; ;bsw/static/Com.c: 32:    *((uint8*)SignalDataPtr) = (uint8)VFB_InclineBtnState;
+[e = *U -> _SignalDataPtr `*uc -> _VFB_InclineBtnState `uc ]
+"33
+[; ;bsw/static/Com.c: 33:    break;
+[e $U 3  ]
+"35
+[; ;bsw/static/Com.c: 35:   case 2U:
+[e :U 7 ]
+"36
+[; ;bsw/static/Com.c: 36:    *((uint8*)SignalDataPtr) = (uint8)VFB_SlideBtnState;
+[e = *U -> _SignalDataPtr `*uc -> _VFB_SlideBtnState `uc ]
+"37
+[; ;bsw/static/Com.c: 37:    break;
+[e $U 3  ]
+"39
+[; ;bsw/static/Com.c: 39:   case 3U:
+[e :U 8 ]
+"40
+[; ;bsw/static/Com.c: 40:    *((uint8*)SignalDataPtr) = (uint8)VFB_AutoBtnState;
+[e = *U -> _SignalDataPtr `*uc -> _VFB_AutoBtnState `uc ]
+"41
+[; ;bsw/static/Com.c: 41:    break;
+[e $U 3  ]
+"43
+[; ;bsw/static/Com.c: 43:   default:
+[e :U 9 ]
+"44
+[; ;bsw/static/Com.c: 44:    break;
+[e $U 3  ]
+"45
+[; ;bsw/static/Com.c: 45:  }
+}
+[e $U 3  ]
+[e :U 4 ]
+[e [\ -> _SignalId `ui , $ -> 0 `ui 5
+ , $ -> 1 `ui 6
+ , $ -> 2 `ui 7
+ , $ -> 3 `ui 8
+ 9 ]
+[e :U 3 ]
+"47
+[; ;bsw/static/Com.c: 47:  return ((Std_ReturnType)0x00u);
+[e ) -> -> 0 `ui `uc ]
+[e $UE 2  ]
+"48
+[; ;bsw/static/Com.c: 48: }
+[e :UE 2 ]
+}

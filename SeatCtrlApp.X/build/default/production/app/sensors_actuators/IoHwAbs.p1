@@ -1,0 +1,504 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"12 app/sensors_actuators/../../bsw/static/../cfg/Dio_Cfg.h
+[; ;app/sensors_actuators/../../bsw/static/../cfg/Dio_Cfg.h: 12: }Dio_Channels;
+[c E921 0 1 2 .. ]
+[n E921 . DioConfg_DioChannel_HeightMotorCh DioConfg_DioChannel_InclineMotorCh DioConfg_DioChannel_SlideMotorCh  ]
+"254 app/sensors_actuators/../../bsw/static/Adc.h
+[; ;app/sensors_actuators/../../bsw/static/Adc.h: 254: Std_ReturnType Adc_ReadGroup ( Adc_GroupType Group, Adc_ValueGroupType* DataBufferPtr );
+[v _Adc_ReadGroup `(uc ~T0 @X0 0 ef2`uc`*uc ]
+"200 app/sensors_actuators/../../bsw/static/Spi.h
+[; ;app/sensors_actuators/../../bsw/static/Spi.h: 200: Std_ReturnType Spi_ReadIB ( Spi_ChannelType Channel, Spi_DataBufferType* DataBufferPtr );
+[v _Spi_ReadIB `(uc ~T0 @X0 0 ef2`uc`*ui ]
+"162 app/sensors_actuators/IoHwAbs.c
+[; ;app/sensors_actuators/IoHwAbs.c: 162:  Dio_WriteChannel(DioConfg_DioChannel_HeightMotorCh, 0x01u);
+[c E930 0 1 .. ]
+[n E930 . LOW HIGH  ]
+"98 app/sensors_actuators/../../bsw/static/Dio.h
+[; ;app/sensors_actuators/../../bsw/static/Dio.h: 98: void Dio_WriteChannel(Dio_ChannelType ChannelId, Dio_LevelType Level);
+[v _Dio_WriteChannel `(v ~T0 @X0 0 ef2`uc`E930 ]
+"54 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"11 app/sensors_actuators/../../bsw/static/../../micro_config.h
+[p x FOSC = HS ]
+"12
+[p x WDTE = OFF ]
+"13
+[p x PWRTE = OFF ]
+"14
+[p x BOREN = ON ]
+"15
+[p x LVP = OFF ]
+"16
+[p x CPD = OFF ]
+"17
+[p x WRT = OFF ]
+"18
+[p x CP = OFF ]
+"12 app/sensors_actuators/../../bsw/static/../cfg/Dio_Cfg.h
+[; ;app/sensors_actuators/../../bsw/static/../cfg/Dio_Cfg.h: 12: }Dio_Channels;
+[v _Dio_Channels `E921 ~T0 @X0 1 e ]
+"26 app/sensors_actuators/IoHwAbs.c
+[; ;app/sensors_actuators/IoHwAbs.c: 26: static Adc_ValueGroupType IoHwAb_PositionSensorsReadings[3U] =
+[v _IoHwAb_PositionSensorsReadings `uc ~T0 @X0 -> 3 `i s ]
+[i _IoHwAb_PositionSensorsReadings
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+]
+"46
+[; ;app/sensors_actuators/IoHwAbs.c: 46: void IoHwAbs_ECUGet_Height (IoPositionSensorReadingType* position)
+[v _IoHwAbs_ECUGet_Height `(v ~T0 @X0 1 ef1`*uc ]
+"47
+[; ;app/sensors_actuators/IoHwAbs.c: 47: {
+{
+[e :U _IoHwAbs_ECUGet_Height ]
+"46
+[; ;app/sensors_actuators/IoHwAbs.c: 46: void IoHwAbs_ECUGet_Height (IoPositionSensorReadingType* position)
+[v _position `*uc ~T0 @X0 1 r1 ]
+"47
+[; ;app/sensors_actuators/IoHwAbs.c: 47: {
+[f ]
+"48
+[; ;app/sensors_actuators/IoHwAbs.c: 48:  Std_ReturnType status;
+[v _status `uc ~T0 @X0 1 a ]
+"50
+[; ;app/sensors_actuators/IoHwAbs.c: 50:  status = Adc_ReadGroup(0U, IoHwAb_PositionSensorsReadings);
+[e = _status ( _Adc_ReadGroup (2 , -> -> 0 `ui `uc &U _IoHwAb_PositionSensorsReadings ]
+"52
+[; ;app/sensors_actuators/IoHwAbs.c: 52:  if(status == ((Std_ReturnType)0x00u))
+[e $ ! == -> _status `i -> -> -> 0 `ui `uc `i 101  ]
+"53
+[; ;app/sensors_actuators/IoHwAbs.c: 53:  {
+{
+"56
+[; ;app/sensors_actuators/IoHwAbs.c: 56:   *position = (IoPositionSensorReadingType)IoHwAb_PositionSensorsReadings[0];
+[e = *U _position *U + &U _IoHwAb_PositionSensorsReadings * -> -> -> 0 `i `ui `ux -> -> # *U &U _IoHwAb_PositionSensorsReadings `ui `ux ]
+"57
+[; ;app/sensors_actuators/IoHwAbs.c: 57:  }
+}
+[e $U 102  ]
+"58
+[; ;app/sensors_actuators/IoHwAbs.c: 58:  else
+[e :U 101 ]
+"59
+[; ;app/sensors_actuators/IoHwAbs.c: 59:  {
+{
+"61
+[; ;app/sensors_actuators/IoHwAbs.c: 61:  }
+}
+[e :U 102 ]
+"62
+[; ;app/sensors_actuators/IoHwAbs.c: 62: }
+[e :UE 100 ]
+}
+"74
+[; ;app/sensors_actuators/IoHwAbs.c: 74: void IoHwAbs_ECUGet_Incline (IoPositionSensorReadingType* position)
+[v _IoHwAbs_ECUGet_Incline `(v ~T0 @X0 1 ef1`*uc ]
+"75
+[; ;app/sensors_actuators/IoHwAbs.c: 75: {
+{
+[e :U _IoHwAbs_ECUGet_Incline ]
+"74
+[; ;app/sensors_actuators/IoHwAbs.c: 74: void IoHwAbs_ECUGet_Incline (IoPositionSensorReadingType* position)
+[v _position `*uc ~T0 @X0 1 r1 ]
+"75
+[; ;app/sensors_actuators/IoHwAbs.c: 75: {
+[f ]
+"76
+[; ;app/sensors_actuators/IoHwAbs.c: 76:  Std_ReturnType status;
+[v _status `uc ~T0 @X0 1 a ]
+"78
+[; ;app/sensors_actuators/IoHwAbs.c: 78:  status = Adc_ReadGroup(0U, IoHwAb_PositionSensorsReadings);
+[e = _status ( _Adc_ReadGroup (2 , -> -> 0 `ui `uc &U _IoHwAb_PositionSensorsReadings ]
+"80
+[; ;app/sensors_actuators/IoHwAbs.c: 80:  if(status == ((Std_ReturnType)0x00u))
+[e $ ! == -> _status `i -> -> -> 0 `ui `uc `i 104  ]
+"81
+[; ;app/sensors_actuators/IoHwAbs.c: 81:  {
+{
+"84
+[; ;app/sensors_actuators/IoHwAbs.c: 84:   *position = (IoPositionSensorReadingType)IoHwAb_PositionSensorsReadings[1];
+[e = *U _position *U + &U _IoHwAb_PositionSensorsReadings * -> -> -> 1 `i `ui `ux -> -> # *U &U _IoHwAb_PositionSensorsReadings `ui `ux ]
+"85
+[; ;app/sensors_actuators/IoHwAbs.c: 85:  }
+}
+[e $U 105  ]
+"86
+[; ;app/sensors_actuators/IoHwAbs.c: 86:  else
+[e :U 104 ]
+"87
+[; ;app/sensors_actuators/IoHwAbs.c: 87:  {
+{
+"89
+[; ;app/sensors_actuators/IoHwAbs.c: 89:  }
+}
+[e :U 105 ]
+"90
+[; ;app/sensors_actuators/IoHwAbs.c: 90: }
+[e :UE 103 ]
+}
+"102
+[; ;app/sensors_actuators/IoHwAbs.c: 102: void IoHwAbs_ECUGet_Slide (IoPositionSensorReadingType* position)
+[v _IoHwAbs_ECUGet_Slide `(v ~T0 @X0 1 ef1`*uc ]
+"103
+[; ;app/sensors_actuators/IoHwAbs.c: 103: {
+{
+[e :U _IoHwAbs_ECUGet_Slide ]
+"102
+[; ;app/sensors_actuators/IoHwAbs.c: 102: void IoHwAbs_ECUGet_Slide (IoPositionSensorReadingType* position)
+[v _position `*uc ~T0 @X0 1 r1 ]
+"103
+[; ;app/sensors_actuators/IoHwAbs.c: 103: {
+[f ]
+"104
+[; ;app/sensors_actuators/IoHwAbs.c: 104:  Std_ReturnType status;
+[v _status `uc ~T0 @X0 1 a ]
+"106
+[; ;app/sensors_actuators/IoHwAbs.c: 106:  status = Adc_ReadGroup(0U, IoHwAb_PositionSensorsReadings);
+[e = _status ( _Adc_ReadGroup (2 , -> -> 0 `ui `uc &U _IoHwAb_PositionSensorsReadings ]
+"108
+[; ;app/sensors_actuators/IoHwAbs.c: 108:  if(status == ((Std_ReturnType)0x00u))
+[e $ ! == -> _status `i -> -> -> 0 `ui `uc `i 107  ]
+"109
+[; ;app/sensors_actuators/IoHwAbs.c: 109:  {
+{
+"112
+[; ;app/sensors_actuators/IoHwAbs.c: 112:   *position = (IoPositionSensorReadingType)IoHwAb_PositionSensorsReadings[2];
+[e = *U _position *U + &U _IoHwAb_PositionSensorsReadings * -> -> -> 2 `i `ui `ux -> -> # *U &U _IoHwAb_PositionSensorsReadings `ui `ux ]
+"113
+[; ;app/sensors_actuators/IoHwAbs.c: 113:  }
+}
+[e $U 108  ]
+"114
+[; ;app/sensors_actuators/IoHwAbs.c: 114:  else
+[e :U 107 ]
+"115
+[; ;app/sensors_actuators/IoHwAbs.c: 115:  {
+{
+"117
+[; ;app/sensors_actuators/IoHwAbs.c: 117:  }
+}
+[e :U 108 ]
+"118
+[; ;app/sensors_actuators/IoHwAbs.c: 118: }
+[e :UE 106 ]
+}
+"130
+[; ;app/sensors_actuators/IoHwAbs.c: 130: void IoHwAbs_ECUGet_Weight (IoWeightSensorReadingType* weight)
+[v _IoHwAbs_ECUGet_Weight `(v ~T0 @X0 1 ef1`*us ]
+"131
+[; ;app/sensors_actuators/IoHwAbs.c: 131: {
+{
+[e :U _IoHwAbs_ECUGet_Weight ]
+"130
+[; ;app/sensors_actuators/IoHwAbs.c: 130: void IoHwAbs_ECUGet_Weight (IoWeightSensorReadingType* weight)
+[v _weight `*us ~T0 @X0 1 r1 ]
+"131
+[; ;app/sensors_actuators/IoHwAbs.c: 131: {
+[f ]
+"132
+[; ;app/sensors_actuators/IoHwAbs.c: 132:  Std_ReturnType status;
+[v _status `uc ~T0 @X0 1 a ]
+"133
+[; ;app/sensors_actuators/IoHwAbs.c: 133:  Spi_DataBufferType spiData;
+[v _spiData `ui ~T0 @X0 1 a ]
+"135
+[; ;app/sensors_actuators/IoHwAbs.c: 135:  status = Spi_ReadIB(0U, &spiData);
+[e = _status ( _Spi_ReadIB (2 , -> -> 0 `ui `uc &U _spiData ]
+"137
+[; ;app/sensors_actuators/IoHwAbs.c: 137:  if(status == ((Std_ReturnType)0x00u))
+[e $ ! == -> _status `i -> -> -> 0 `ui `uc `i 110  ]
+"138
+[; ;app/sensors_actuators/IoHwAbs.c: 138:  {
+{
+"141
+[; ;app/sensors_actuators/IoHwAbs.c: 141:   *weight = (IoWeightSensorReadingType)spiData;
+[e = *U _weight -> _spiData `us ]
+"142
+[; ;app/sensors_actuators/IoHwAbs.c: 142:  }
+}
+[e $U 111  ]
+"143
+[; ;app/sensors_actuators/IoHwAbs.c: 143:  else
+[e :U 110 ]
+"144
+[; ;app/sensors_actuators/IoHwAbs.c: 144:  {
+{
+"146
+[; ;app/sensors_actuators/IoHwAbs.c: 146:  }
+}
+[e :U 111 ]
+"147
+[; ;app/sensors_actuators/IoHwAbs.c: 147: }
+[e :UE 109 ]
+}
+"159
+[; ;app/sensors_actuators/IoHwAbs.c: 159: void IoHwAbs_ECUSetForward_Height (void)
+[v _IoHwAbs_ECUSetForward_Height `(v ~T0 @X0 1 ef ]
+"160
+[; ;app/sensors_actuators/IoHwAbs.c: 160: {
+{
+[e :U _IoHwAbs_ECUSetForward_Height ]
+[f ]
+"162
+[; ;app/sensors_actuators/IoHwAbs.c: 162:  Dio_WriteChannel(DioConfg_DioChannel_HeightMotorCh, 0x01u);
+[e ( _Dio_WriteChannel (2 , -> . `E921 0 `uc -> -> 1 `ui `E930 ]
+"163
+[; ;app/sensors_actuators/IoHwAbs.c: 163: }
+[e :UE 112 ]
+}
+"175
+[; ;app/sensors_actuators/IoHwAbs.c: 175: void IoHwAbs_ECUSetForward_Incline (void)
+[v _IoHwAbs_ECUSetForward_Incline `(v ~T0 @X0 1 ef ]
+"176
+[; ;app/sensors_actuators/IoHwAbs.c: 176: {
+{
+[e :U _IoHwAbs_ECUSetForward_Incline ]
+[f ]
+"178
+[; ;app/sensors_actuators/IoHwAbs.c: 178:  Dio_WriteChannel(DioConfg_DioChannel_InclineMotorCh, 0x01u);
+[e ( _Dio_WriteChannel (2 , -> . `E921 1 `uc -> -> 1 `ui `E930 ]
+"179
+[; ;app/sensors_actuators/IoHwAbs.c: 179: }
+[e :UE 113 ]
+}
+"191
+[; ;app/sensors_actuators/IoHwAbs.c: 191: void IoHwAbs_ECUSetForward_Slide (void)
+[v _IoHwAbs_ECUSetForward_Slide `(v ~T0 @X0 1 ef ]
+"192
+[; ;app/sensors_actuators/IoHwAbs.c: 192: {
+{
+[e :U _IoHwAbs_ECUSetForward_Slide ]
+[f ]
+"194
+[; ;app/sensors_actuators/IoHwAbs.c: 194:  Dio_WriteChannel(DioConfg_DioChannel_SlideMotorCh, 0x01u);
+[e ( _Dio_WriteChannel (2 , -> . `E921 2 `uc -> -> 1 `ui `E930 ]
+"195
+[; ;app/sensors_actuators/IoHwAbs.c: 195: }
+[e :UE 114 ]
+}
+"207
+[; ;app/sensors_actuators/IoHwAbs.c: 207: void IoHwAbs_ECUSetReverse_Height (void)
+[v _IoHwAbs_ECUSetReverse_Height `(v ~T0 @X0 1 ef ]
+"208
+[; ;app/sensors_actuators/IoHwAbs.c: 208: {
+{
+[e :U _IoHwAbs_ECUSetReverse_Height ]
+[f ]
+"210
+[; ;app/sensors_actuators/IoHwAbs.c: 210:  Dio_WriteChannel(DioConfg_DioChannel_HeightMotorCh, 0x00u);
+[e ( _Dio_WriteChannel (2 , -> . `E921 0 `uc -> -> 0 `ui `E930 ]
+"211
+[; ;app/sensors_actuators/IoHwAbs.c: 211: }
+[e :UE 115 ]
+}
+"223
+[; ;app/sensors_actuators/IoHwAbs.c: 223: void IoHwAbs_ECUSetReverse_Incline (void)
+[v _IoHwAbs_ECUSetReverse_Incline `(v ~T0 @X0 1 ef ]
+"224
+[; ;app/sensors_actuators/IoHwAbs.c: 224: {
+{
+[e :U _IoHwAbs_ECUSetReverse_Incline ]
+[f ]
+"226
+[; ;app/sensors_actuators/IoHwAbs.c: 226:  Dio_WriteChannel(DioConfg_DioChannel_InclineMotorCh, 0x00u);
+[e ( _Dio_WriteChannel (2 , -> . `E921 1 `uc -> -> 0 `ui `E930 ]
+"227
+[; ;app/sensors_actuators/IoHwAbs.c: 227: }
+[e :UE 116 ]
+}
+"239
+[; ;app/sensors_actuators/IoHwAbs.c: 239: void IoHwAbs_ECUSetReverse_Slide (void)
+[v _IoHwAbs_ECUSetReverse_Slide `(v ~T0 @X0 1 ef ]
+"240
+[; ;app/sensors_actuators/IoHwAbs.c: 240: {
+{
+[e :U _IoHwAbs_ECUSetReverse_Slide ]
+[f ]
+"242
+[; ;app/sensors_actuators/IoHwAbs.c: 242:  Dio_WriteChannel(DioConfg_DioChannel_SlideMotorCh, 0x00u);
+[e ( _Dio_WriteChannel (2 , -> . `E921 2 `uc -> -> 0 `ui `E930 ]
+"243
+[; ;app/sensors_actuators/IoHwAbs.c: 243: }
+[e :UE 117 ]
+}

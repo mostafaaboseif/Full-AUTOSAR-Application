@@ -1,0 +1,264 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"20 app/appswcs/../../rte/Rte_HMI.h
+[; ;app/appswcs/../../rte/Rte_HMI.h: 20: boolean Rte_IsUpdated_HMI_rpSeatCtrlData_Height();
+[v _Rte_IsUpdated_HMI_rpSeatCtrlData_Height `(uc ~T0 @X0 0 e? ]
+"16
+[; ;app/appswcs/../../rte/Rte_HMI.h: 16: Std_ReturnType Rte_Read_HMI_rpSeatCtrlData_Height(uint8* Height);
+[v _Rte_Read_HMI_rpSeatCtrlData_Height `(uc ~T0 @X0 0 ef1`*uc ]
+"23
+[; ;app/appswcs/../../rte/Rte_HMI.h: 23: Std_ReturnType Rte_Write_HMI_ppSeatCtrlBtns_HeightBtnState(MultiStateBtnType HeightBtnState);
+[v _Rte_Write_HMI_ppSeatCtrlBtns_HeightBtnState `(uc ~T0 @X0 0 ef1`uc ]
+"21
+[; ;app/appswcs/../../rte/Rte_HMI.h: 21: boolean Rte_IsUpdated_HMI_rpSeatCtrlData_Incline();
+[v _Rte_IsUpdated_HMI_rpSeatCtrlData_Incline `(uc ~T0 @X0 0 e? ]
+"17
+[; ;app/appswcs/../../rte/Rte_HMI.h: 17: Std_ReturnType Rte_Read_HMI_rpSeatCtrlData_Incline(uint8* Incline);
+[v _Rte_Read_HMI_rpSeatCtrlData_Incline `(uc ~T0 @X0 0 ef1`*uc ]
+"24
+[; ;app/appswcs/../../rte/Rte_HMI.h: 24: Std_ReturnType Rte_Write_HMI_ppSeatCtrlBtns_InclineBtnState(MultiStateBtnType InclineBtnState);
+[v _Rte_Write_HMI_ppSeatCtrlBtns_InclineBtnState `(uc ~T0 @X0 0 ef1`uc ]
+"22
+[; ;app/appswcs/../../rte/Rte_HMI.h: 22: boolean Rte_IsUpdated_HMI_rpSeatCtrlData_Slide();
+[v _Rte_IsUpdated_HMI_rpSeatCtrlData_Slide `(uc ~T0 @X0 0 e? ]
+"18
+[; ;app/appswcs/../../rte/Rte_HMI.h: 18: Std_ReturnType Rte_Read_HMI_rpSeatCtrlData_Slide(uint8* Slide);
+[v _Rte_Read_HMI_rpSeatCtrlData_Slide `(uc ~T0 @X0 0 ef1`*uc ]
+"25
+[; ;app/appswcs/../../rte/Rte_HMI.h: 25: Std_ReturnType Rte_Write_HMI_ppSeatCtrlBtns_SlideBtnState(MultiStateBtnType SlideBtnState);
+[v _Rte_Write_HMI_ppSeatCtrlBtns_SlideBtnState `(uc ~T0 @X0 0 ef1`uc ]
+"19
+[; ;app/appswcs/../../rte/Rte_HMI.h: 19: Std_ReturnType Rte_Read_HMI_rpSeatModeBtn_SeatModeBtn(SeatModeBtnType* SeatModeBtn);
+[v _Rte_Read_HMI_rpSeatModeBtn_SeatModeBtn `(uc ~T0 @X0 0 ef1`*uc ]
+"26
+[; ;app/appswcs/../../rte/Rte_HMI.h: 26: Std_ReturnType Rte_Switch_HMI_ppSeatCtrlMode_SeatCtrlMode(uint8 SeatCtrlMode);
+[v _Rte_Switch_HMI_ppSeatCtrlMode_SeatCtrlMode `(uc ~T0 @X0 0 ef1`uc ]
+"25 app/appswcs/HMI.c
+[; ;app/appswcs/HMI.c: 25: static MultiStateBtnType btnValueToState(uint8 value)
+[v _btnValueToState `(uc ~T0 @X0 1 sf1`uc ]
+"26
+[; ;app/appswcs/HMI.c: 26: {
+{
+[e :U _btnValueToState ]
+"25
+[; ;app/appswcs/HMI.c: 25: static MultiStateBtnType btnValueToState(uint8 value)
+[v _value `uc ~T0 @X0 1 r1 ]
+"26
+[; ;app/appswcs/HMI.c: 26: {
+[f ]
+"27
+[; ;app/appswcs/HMI.c: 27:  MultiStateBtnType btnState;
+[v _btnState `uc ~T0 @X0 1 a ]
+"29
+[; ;app/appswcs/HMI.c: 29:  if(value == 1)
+[e $ ! == -> _value `i -> 1 `i 2  ]
+"30
+[; ;app/appswcs/HMI.c: 30:  {
+{
+"31
+[; ;app/appswcs/HMI.c: 31:   btnState = 2;
+[e = _btnState -> -> 2 `i `uc ]
+"32
+[; ;app/appswcs/HMI.c: 32:  }
+}
+[e $U 3  ]
+"33
+[; ;app/appswcs/HMI.c: 33:  else if(value == 2)
+[e :U 2 ]
+[e $ ! == -> _value `i -> 2 `i 4  ]
+"34
+[; ;app/appswcs/HMI.c: 34:  {
+{
+"35
+[; ;app/appswcs/HMI.c: 35:   btnState = 1;
+[e = _btnState -> -> 1 `i `uc ]
+"36
+[; ;app/appswcs/HMI.c: 36:  }
+}
+[e $U 5  ]
+"37
+[; ;app/appswcs/HMI.c: 37:  else
+[e :U 4 ]
+"38
+[; ;app/appswcs/HMI.c: 38:  {
+{
+"39
+[; ;app/appswcs/HMI.c: 39:   btnState = 0;
+[e = _btnState -> -> 0 `i `uc ]
+"40
+[; ;app/appswcs/HMI.c: 40:  }
+}
+[e :U 5 ]
+[e :U 3 ]
+"42
+[; ;app/appswcs/HMI.c: 42:  return btnState;
+[e ) _btnState ]
+[e $UE 1  ]
+"43
+[; ;app/appswcs/HMI.c: 43: }
+[e :UE 1 ]
+}
+"45
+[; ;app/appswcs/HMI.c: 45: void HMI_MainFunction (void)
+[v _HMI_MainFunction `(v ~T0 @X0 1 ef ]
+"46
+[; ;app/appswcs/HMI.c: 46: {
+{
+[e :U _HMI_MainFunction ]
+[f ]
+"47
+[; ;app/appswcs/HMI.c: 47:  Std_ReturnType status;
+[v _status `uc ~T0 @X0 1 a ]
+"48
+[; ;app/appswcs/HMI.c: 48:  MultiStateBtnType HeightBtnState;
+[v _HeightBtnState `uc ~T0 @X0 1 a ]
+"49
+[; ;app/appswcs/HMI.c: 49:  MultiStateBtnType InclineBtnState;
+[v _InclineBtnState `uc ~T0 @X0 1 a ]
+"50
+[; ;app/appswcs/HMI.c: 50:  MultiStateBtnType SlideBtnState;
+[v _SlideBtnState `uc ~T0 @X0 1 a ]
+"51
+[; ;app/appswcs/HMI.c: 51:  uint8 Height;
+[v _Height `uc ~T0 @X0 1 a ]
+"52
+[; ;app/appswcs/HMI.c: 52:  uint8 Incline;
+[v _Incline `uc ~T0 @X0 1 a ]
+"53
+[; ;app/appswcs/HMI.c: 53:  uint8 Slide;
+[v _Slide `uc ~T0 @X0 1 a ]
+"54
+[; ;app/appswcs/HMI.c: 54:  boolean IsUpdated;
+[v _IsUpdated `uc ~T0 @X0 1 a ]
+"56
+[; ;app/appswcs/HMI.c: 56:  IsUpdated = Rte_IsUpdated_HMI_rpSeatCtrlData_Height();
+[e = _IsUpdated ( _Rte_IsUpdated_HMI_rpSeatCtrlData_Height ..  ]
+"57
+[; ;app/appswcs/HMI.c: 57:  status = Rte_Read_HMI_rpSeatCtrlData_Height(&Height);
+[e = _status ( _Rte_Read_HMI_rpSeatCtrlData_Height (1 &U _Height ]
+"58
+[; ;app/appswcs/HMI.c: 58:  if(status == 0U && IsUpdated == (1u))
+[e $ ! && == -> _status `ui -> 0 `ui == -> _IsUpdated `ui -> 1 `ui 7  ]
+"59
+[; ;app/appswcs/HMI.c: 59:  {
+{
+"60
+[; ;app/appswcs/HMI.c: 60:   HeightBtnState = btnValueToState(Height);
+[e = _HeightBtnState ( _btnValueToState (1 _Height ]
+"61
+[; ;app/appswcs/HMI.c: 61:   (void)Rte_Write_HMI_ppSeatCtrlBtns_HeightBtnState(HeightBtnState);
+[e ( _Rte_Write_HMI_ppSeatCtrlBtns_HeightBtnState (1 _HeightBtnState ]
+"62
+[; ;app/appswcs/HMI.c: 62:  }
+}
+[e :U 7 ]
+"64
+[; ;app/appswcs/HMI.c: 64:  IsUpdated = Rte_IsUpdated_HMI_rpSeatCtrlData_Incline();
+[e = _IsUpdated ( _Rte_IsUpdated_HMI_rpSeatCtrlData_Incline ..  ]
+"65
+[; ;app/appswcs/HMI.c: 65:  status = Rte_Read_HMI_rpSeatCtrlData_Incline(&Incline);
+[e = _status ( _Rte_Read_HMI_rpSeatCtrlData_Incline (1 &U _Incline ]
+"66
+[; ;app/appswcs/HMI.c: 66:  if(status == 0U && IsUpdated == (1u))
+[e $ ! && == -> _status `ui -> 0 `ui == -> _IsUpdated `ui -> 1 `ui 8  ]
+"67
+[; ;app/appswcs/HMI.c: 67:  {
+{
+"68
+[; ;app/appswcs/HMI.c: 68:   InclineBtnState = btnValueToState(Incline);
+[e = _InclineBtnState ( _btnValueToState (1 _Incline ]
+"69
+[; ;app/appswcs/HMI.c: 69:   (void)Rte_Write_HMI_ppSeatCtrlBtns_InclineBtnState(InclineBtnState);
+[e ( _Rte_Write_HMI_ppSeatCtrlBtns_InclineBtnState (1 _InclineBtnState ]
+"70
+[; ;app/appswcs/HMI.c: 70:  }
+}
+[e :U 8 ]
+"72
+[; ;app/appswcs/HMI.c: 72:  IsUpdated = Rte_IsUpdated_HMI_rpSeatCtrlData_Slide();
+[e = _IsUpdated ( _Rte_IsUpdated_HMI_rpSeatCtrlData_Slide ..  ]
+"73
+[; ;app/appswcs/HMI.c: 73:  status = Rte_Read_HMI_rpSeatCtrlData_Slide(&Slide);
+[e = _status ( _Rte_Read_HMI_rpSeatCtrlData_Slide (1 &U _Slide ]
+"74
+[; ;app/appswcs/HMI.c: 74:  if(status == 0U && IsUpdated == (1u))
+[e $ ! && == -> _status `ui -> 0 `ui == -> _IsUpdated `ui -> 1 `ui 9  ]
+"75
+[; ;app/appswcs/HMI.c: 75:  {
+{
+"76
+[; ;app/appswcs/HMI.c: 76:   SlideBtnState = btnValueToState(Slide);
+[e = _SlideBtnState ( _btnValueToState (1 _Slide ]
+"77
+[; ;app/appswcs/HMI.c: 77:   (void)Rte_Write_HMI_ppSeatCtrlBtns_SlideBtnState(SlideBtnState);
+[e ( _Rte_Write_HMI_ppSeatCtrlBtns_SlideBtnState (1 _SlideBtnState ]
+"78
+[; ;app/appswcs/HMI.c: 78:  }
+}
+[e :U 9 ]
+"79
+[; ;app/appswcs/HMI.c: 79: }
+[e :UE 6 ]
+}
+"90
+[; ;app/appswcs/HMI.c: 90: void HMI_SeatModeChanged (void)
+[v _HMI_SeatModeChanged `(v ~T0 @X0 1 ef ]
+"91
+[; ;app/appswcs/HMI.c: 91: {
+{
+[e :U _HMI_SeatModeChanged ]
+[f ]
+"92
+[; ;app/appswcs/HMI.c: 92:  SeatModeBtnType SeatModeBtn;
+[v _SeatModeBtn `uc ~T0 @X0 1 a ]
+"93
+[; ;app/appswcs/HMI.c: 93:  uint8 SeatCtrlMode = 0;
+[v _SeatCtrlMode `uc ~T0 @X0 1 a ]
+[e = _SeatCtrlMode -> -> 0 `i `uc ]
+"95
+[; ;app/appswcs/HMI.c: 95:  (void)Rte_Read_HMI_rpSeatModeBtn_SeatModeBtn(&SeatModeBtn);
+[e ( _Rte_Read_HMI_rpSeatModeBtn_SeatModeBtn (1 &U _SeatModeBtn ]
+"97
+[; ;app/appswcs/HMI.c: 97:  if(SeatModeBtn == 0)
+[e $ ! == -> _SeatModeBtn `i -> 0 `i 11  ]
+"98
+[; ;app/appswcs/HMI.c: 98:  {
+{
+"99
+[; ;app/appswcs/HMI.c: 99:   SeatCtrlMode = 1;
+[e = _SeatCtrlMode -> -> 1 `i `uc ]
+"100
+[; ;app/appswcs/HMI.c: 100:  }
+}
+[e $U 12  ]
+"101
+[; ;app/appswcs/HMI.c: 101:  else if(SeatModeBtn == 1)
+[e :U 11 ]
+[e $ ! == -> _SeatModeBtn `i -> 1 `i 13  ]
+"102
+[; ;app/appswcs/HMI.c: 102:  {
+{
+"103
+[; ;app/appswcs/HMI.c: 103:   SeatCtrlMode = 2;
+[e = _SeatCtrlMode -> -> 2 `i `uc ]
+"104
+[; ;app/appswcs/HMI.c: 104:  }
+}
+[e $U 14  ]
+"105
+[; ;app/appswcs/HMI.c: 105:  else
+[e :U 13 ]
+"106
+[; ;app/appswcs/HMI.c: 106:  {
+{
+"108
+[; ;app/appswcs/HMI.c: 108:  }
+}
+[e :U 14 ]
+[e :U 12 ]
+"110
+[; ;app/appswcs/HMI.c: 110:  (void)Rte_Switch_HMI_ppSeatCtrlMode_SeatCtrlMode(SeatCtrlMode);
+[e ( _Rte_Switch_HMI_ppSeatCtrlMode_SeatCtrlMode (1 _SeatCtrlMode ]
+"111
+[; ;app/appswcs/HMI.c: 111: }
+[e :UE 10 ]
+}

@@ -1,0 +1,83 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"16 app/sensors_actuators/../../rte/Rte_InclineSensor.h
+[; ;app/sensors_actuators/../../rte/Rte_InclineSensor.h: 16: Std_ReturnType Rte_Call_InclineSensor_rpIOGetIncline_IOGet(IoPositionSensorReadingType* position);
+[v _Rte_Call_InclineSensor_rpIOGetIncline_IOGet `(uc ~T0 @X0 0 ef1`*uc ]
+"25 app/sensors_actuators/InclineSensor.c
+[; ;app/sensors_actuators/InclineSensor.c: 25: void InclineSensor_GetPosition (SensorPositionType* Position)
+[v _InclineSensor_GetPosition `(v ~T0 @X0 1 ef1`*uc ]
+"26
+[; ;app/sensors_actuators/InclineSensor.c: 26: {
+{
+[e :U _InclineSensor_GetPosition ]
+"25
+[; ;app/sensors_actuators/InclineSensor.c: 25: void InclineSensor_GetPosition (SensorPositionType* Position)
+[v _Position `*uc ~T0 @X0 1 r1 ]
+"26
+[; ;app/sensors_actuators/InclineSensor.c: 26: {
+[f ]
+"27
+[; ;app/sensors_actuators/InclineSensor.c: 27:  IoPositionSensorReadingType position;
+[v _position `uc ~T0 @X0 1 a ]
+"30
+[; ;app/sensors_actuators/InclineSensor.c: 30:  (void)Rte_Call_InclineSensor_rpIOGetIncline_IOGet(&position);
+[e ( _Rte_Call_InclineSensor_rpIOGetIncline_IOGet (1 &U _position ]
+"32
+[; ;app/sensors_actuators/InclineSensor.c: 32:  if(position == 0)
+[e $ ! == -> _position `i -> 0 `i 2  ]
+"33
+[; ;app/sensors_actuators/InclineSensor.c: 33:  {
+{
+"34
+[; ;app/sensors_actuators/InclineSensor.c: 34:   *Position = 0;
+[e = *U _Position -> -> 0 `i `uc ]
+"35
+[; ;app/sensors_actuators/InclineSensor.c: 35:  }
+}
+[e $U 3  ]
+"36
+[; ;app/sensors_actuators/InclineSensor.c: 36:  else if(position > 0 && position <= 64)
+[e :U 2 ]
+[e $ ! && > -> _position `i -> 0 `i <= -> _position `i -> 64 `i 4  ]
+"37
+[; ;app/sensors_actuators/InclineSensor.c: 37:  {
+{
+"38
+[; ;app/sensors_actuators/InclineSensor.c: 38:   *Position = 64;
+[e = *U _Position -> -> 64 `i `uc ]
+"39
+[; ;app/sensors_actuators/InclineSensor.c: 39:  }
+}
+[e $U 5  ]
+"40
+[; ;app/sensors_actuators/InclineSensor.c: 40:  else if(position > 64 && position<= 192)
+[e :U 4 ]
+[e $ ! && > -> _position `i -> 64 `i <= -> _position `i -> 192 `i 6  ]
+"41
+[; ;app/sensors_actuators/InclineSensor.c: 41:  {
+{
+"42
+[; ;app/sensors_actuators/InclineSensor.c: 42:   *Position = 128;
+[e = *U _Position -> -> 128 `i `uc ]
+"43
+[; ;app/sensors_actuators/InclineSensor.c: 43:  }
+}
+[e $U 7  ]
+"44
+[; ;app/sensors_actuators/InclineSensor.c: 44:  else
+[e :U 6 ]
+"45
+[; ;app/sensors_actuators/InclineSensor.c: 45:  {
+{
+"46
+[; ;app/sensors_actuators/InclineSensor.c: 46:   *Position = 192;
+[e = *U _Position -> -> 192 `i `uc ]
+"47
+[; ;app/sensors_actuators/InclineSensor.c: 47:  }
+}
+[e :U 7 ]
+[e :U 5 ]
+[e :U 3 ]
+"48
+[; ;app/sensors_actuators/InclineSensor.c: 48: }
+[e :UE 1 ]
+}

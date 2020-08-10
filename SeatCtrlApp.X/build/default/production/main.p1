@@ -1,0 +1,25 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"37 ./rte/Rte_Main.h
+[; ;./rte/Rte_Main.h: 37: Std_ReturnType Rte_Start(void);
+[v _Rte_Start `(uc ~T0 @X0 0 ef ]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"5 main.c
+[; ;main.c: 5: int main(void)
+[v _main `(i ~T0 @X0 1 ef ]
+"6
+[; ;main.c: 6: {
+{
+[e :U _main ]
+[f ]
+"7
+[; ;main.c: 7:  Rte_Start();
+[e ( _Rte_Start ..  ]
+"9
+[; ;main.c: 9:  return 0;
+[e ) -> 0 `i ]
+[e $UE 4  ]
+"10
+[; ;main.c: 10: }
+[e :UE 4 ]
+}

@@ -1,0 +1,12 @@
+
+
+#ifndef UART_CFG_H
+#define UART_CFG_H
+
+#define DEV_ERROR_DETECT STD_OFF
+#define UART_ERROR_DETECT STD_OFF
+
+#define UART_DEINIT_API STD_ON
+#define UART_GET_STATUS_API STD_ON
+
+#endif
