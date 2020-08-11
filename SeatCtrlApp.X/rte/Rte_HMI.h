@@ -1,11 +1,4 @@
-/**
- *
- * \brief Sprints AUTOSAR Master Class - SeatCtrlApp
- * \author Hassan Farahat
- *
- * For any inquiries: hassan.m.farahat@gmail.com
- *
- */
+
  
 #ifndef RTE_HMI_H
 #define RTE_HMI_H

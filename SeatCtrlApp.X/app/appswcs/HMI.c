@@ -1,14 +1,4 @@
-/**
- *
- * \file HMI_Template.c
- * \brief Rte Component Template for AUTOSAR SWC: HMI
- *
- * \author Sprints AUTOSAR Authoring Tool (SAAT) v1.0.2
- * Generated on 7/11/2020 01:30 PM
- *
- * For any inquiries: hassan.m.farahat@gmail.com
- *
- */
+
 
 #include "../../rte/Rte_HMI.h"
 

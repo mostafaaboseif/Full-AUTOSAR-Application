@@ -1,11 +1,5 @@
-/**
- *
- * \brief Sprints AUTOSAR Master Class - SeatCtrlApp
- * \author Hassan Farahat
- *
- * For any inquiries: hassan.m.farahat@gmail.com
- *
- */
+
+
  
 #ifndef RTE_WEIGHTSENSOR_H
 #define RTE_WEIGHTSENSOR_H
